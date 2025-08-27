@@ -36,7 +36,7 @@ export default function HomePage() {
           <div className="space-y-6 order-2 lg:order-2">
             <div className="space-y-4">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight">
-                Hi, I'm Nusrat Jahan Lia
+                Hi, I'm Lia
               </h1>
             </div>
 

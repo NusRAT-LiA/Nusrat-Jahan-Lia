@@ -116,7 +116,7 @@ export default function ResearchPage() {
             {publications.map((pub, index) => (
               <Card key={index} className="hover:shadow-md transition-shadow">
                 <CardContent className="p-6">
-                  <div className="flex justify-between items-start gap-4">
+                  <div className="flex flex-col sm:flex-row justify-between items-start gap-4">
                     <div className="flex-1 space-y-3">
                       <h3 className="font-semibold text-lg hover:text-primary cursor-pointer">{pub.title}</h3>
 

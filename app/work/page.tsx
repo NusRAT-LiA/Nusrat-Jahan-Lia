@@ -220,8 +220,7 @@ export default function WorkPage() {
         <div className="text-center space-y-4 mb-16">
           <h1 className="text-4xl md:text-5xl font-bold tracking-tight">Work Experience</h1>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            My journey through academia, industry, and entrepreneurship, building AI systems that enhance human
-            potential.
+            
           </p>
         </div>
 
