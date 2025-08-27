@@ -15,7 +15,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
-  basePath: '/Nusrat-Jahan-Lia', // <-- your GitHub repo name
+  // basePath: '/', // <-- your GitHub repo name
   eslint: {
     ignoreDuringBuilds: true,
   },
