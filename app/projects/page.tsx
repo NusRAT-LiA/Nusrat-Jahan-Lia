@@ -52,7 +52,7 @@ const projects: Project[] = [
     "I designed a small-language-model building course as an instructor of my university research lab - BARTA. This custom small language model that was built to give the learners hands-on experience.",
     technologies: ["LLM", "PyTorch", "Hugging Face"],
     categories: ["AI/ML"],
-    image: "/projects/slm.png?height=400&width=600",
+    image: "projects/slm.png?height=400&width=600",
     links: {
       github: "https://github.com/NusRAT-LiA/Bangla-Small-Language-Model",
     },
@@ -71,7 +71,7 @@ const projects: Project[] = [
   //   "I believe you only learn something to the core when you can build and experiment with it. Implementing BERT was an integral part of my journey as an LLM-engineer",
   //   technologies: ["LLM", "PyTorch", "Hugging Face"],
   //   categories: ["AI/ML"],
-  //   image: "/projects/bert.png?height=400&width=600",
+  //   image: "projects/bert.png?height=400&width=600",
   //   links: {
   //     github: "https://github.com/NusRAT-LiA/Llama-3.2-Medico-BD",
   //   },
@@ -90,7 +90,7 @@ const projects: Project[] = [
     "This project was a part of gaining my deep-learning and LLM certification.",
     technologies: ["LLM", "Fine-Tuning", "QLoRA"],
     categories: ["AI/ML"],
-    image: "/projects/medico-bd.png?height=400&width=600",
+    image: "projects/medico-bd.png?height=400&width=600",
     links: {
       github: "https://github.com/NusRAT-LiA/Llama-3.2-Medico-BD",
     },
@@ -109,7 +109,7 @@ const projects: Project[] = [
       "Did you know that shipment document related delays cost the global economy $3 Billion annually? Despite such advances in documentation automation, port-document flow is still plagued by inefficiencies, delays, and manual errors. Me, along with my team, decided to find a feasible solution to this problem. And that's when PorTech was born. I felt we have done justice to the idea when this project became the Gold-Winner of Blockchain Olympiad 2025.",
     technologies: ["Zero-Knowledge Proof", "IPFS", "Solidity", "Ethereum"],
     categories: ["Blockchain"],
-    image: "/projects/PorTech.png?height=400&width=600",
+    image: "projects/PorTech.png?height=400&width=600",
     links: {
       github: "https://github.com/NusRAT-LiA/PorTech",
       pitchDeck: "https://www.youtube.com/watch?v=1iQ-RmJ-rNA",
@@ -132,7 +132,7 @@ const projects: Project[] = [
       "The amount of tax fraud in Bangladesh is one of the highests in the world. And globally, 65% tax evasion is done by corporate companies. Hence, I decided to build a solution that could help the government collect taxes more efficiently and accurately without compromising company privacy. This project was a finalist for International Blockchain Olympiad 2023. I built the technical architecture and led the team, having two other talented team-mates who made this challenging project successful.",
     technologies: ["Hyperledger Fabric","Zero-Knowledge Proof", "Hyperledger Indy", "Hyperledger FireFly", "Solidity", "Ethereum"],
     categories: ["Blockchain"],
-    image: "/projects/DefTax.png?height=400&width=600",
+    image: "projects/DefTax.png?height=400&width=600",
     links: {
       document: "https://drive.google.com/file/d/1zKJ-phI0xy-OG140DSUgYTIV7OJddQ1v/view?usp=sharing",
       whitepaper: "https://drive.google.com/file/d/1ph5XWQm3f-daXy5QRIDsAmbOs2hsDu68/view?usp=sharing",
@@ -153,7 +153,7 @@ const projects: Project[] = [
       "An academic project for Distributed Systems course, taken during my fifth semester of Software Engineering major.",
     technologies: ["React", "FastAPI", "Python", "OAuth", "MinIO", "Docker", "JavaScript", "Nginx", "PostgreSQL"],
     categories: [ "Web Development"],
-    image: "/projects/StackOverflow-Lite.png?height=400&width=600",
+    image: "projects/StackOverflow-Lite.png?height=400&width=600",
     links: {
       github: "https://github.com/NusRAT-LiA/DistributedSystem-Implementation",
       document: "https://docs.google.com/document/d/1ybrJHoyNwqBF87LoZmAsKnRCIoknRED6e-0u8dmpHxw/edit?usp=sharing",
@@ -172,7 +172,7 @@ const projects: Project[] = [
       "The motivation came from the Bangladeshi NASA SPACE APP CHALLENGE GLOBAL WINNER, a group of Bangladeshi kids competing and winning against professionals. They were very curious about Mars but had no idea about where to begin. They just represented the regular Bangladesh school students who lack access to interactive space education resources. This game was intended to be a stepping stone for real-time simulated space education for these students. I did not have the funds to get a VR set. But I kept the design VR compatible so that the same codebase can be migrated to build a VR game.",
     technologies: ["Unity", "C#","Python","3D Modeling", "Physics Simulation"],
     categories: ["EdTech","AI/ML", "Game Development", "VR/AR" ],
-    image: "/projects/Meg.png?height=400&width=600",
+    image: "projects/Meg.png?height=400&width=600",
     links: {
       github: "https://github.com/NusRAT-LiA/Mars-Explorer-Game",
       document: "https://github.com/NusRAT-LiA/Mars-Explorer-Game/blob/main/SRS/MEG-SRS.pdf",
@@ -191,7 +191,7 @@ const projects: Project[] = [
   //     "This was a part of the academic course, DBMS-2 assignment and my first step in the Machine-Learning world. Understanding algorithms from first principles is crucial for developing expertise in machine learning.",
   //   technologies: ["Python", "scikit-learn", "NumPy", "Matplotlib"],
   //   categories: ["AI/ML"],
-  //   image: "/projects/DecisionTree-Implementation.png?height=400&width=600",
+  //   image: "projects/DecisionTree-Implementation.png?height=400&width=600",
   //   links: {
   //     github: "https://github.com/NusRAT-LiA/DecisionTree-Implementation",
   //   },
@@ -210,7 +210,7 @@ const projects: Project[] = [
       "I had just learned game development and became a finalist in a national GameJam. It was a 24 hour long game development challenge on the theme - It's Hard to cook without deadly spells. This project pushed my limits in rapid prototyping and creative problem-solving.",
     technologies: ["Unity", "C#", "3D Rendering", "3D Animation", "AI Navigation"],
     categories: ["Game Development"],
-    image: "/projects/KookWa.png?height=400&width=600",
+    image: "projects/KookWa.png?height=400&width=600",
     links: {
       github: "https://github.com/NusRAT-LiA/Kook-wa",
       demo: "https://www.youtube.com/watch?v=skUOGGozj-A",
@@ -230,7 +230,7 @@ const projects: Project[] = [
       "During my freshman year, I was very interested in understanding blockchain technology and had earned professional certification on it. Despite blockchain being a transformative technology, many of my peers remained unfamiliar with its core concepts beyond surface-level applications. I believe that when learners construct something themselves, they don't just remember it, they understand it by heart. So I built this platform through which, any curious learner can get hands-on experience with core algorithmic components like hashing, consensus mechanisms, and peer-to-peer networking, and move beyond theory by internalizing how blockchain works from the ground up.",
     technologies: ["C++", "Cryptography", "Data Structures"],
     categories: ["Blockchain", "EdTech", "Systems Programming"],
-    image: "/projects/BlockChainED.png?height=400&width=600",
+    image: "projects/BlockChainED.png?height=400&width=600",
     links: {
       github: "https://github.com/NusRAT-LiA/Blockchain_in_Cpp",
       document: "https://github.com/NusRAT-LiA/Blockchain_in_Cpp/blob/main/BlockChainED-Paper.pdf",

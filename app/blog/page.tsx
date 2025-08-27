@@ -25,7 +25,7 @@ export default function BlogPage() {
       title: "The Art of Knowing When to Stop: Early Stopping in AI and Life",
       excerpt:
         "Consider stopping soon. How many times have we all needed that exact warning in our lives?",
-      image: "/blog/blog6.png?height=200&width=300",
+      image: "blog/blog6.png?height=200&width=300",
       date: "2025-08-20",
       readTime: "4 min read",
       link: "https://medium.com/@nusratlia/the-art-of-knowing-when-to-stop-early-stopping-in-ai-and-life-c863c84aa20d",
@@ -34,7 +34,7 @@ export default function BlogPage() {
       title: "The Canvas of Resistance: On Differentiation, Algorithms, and the Mathematics of Justice",
       excerpt:
         "Thinking aloud: in a world that systematically flattens difference into hierarchy, what is means to be a differentiator?",
-      image: "/blog/blog5.png?height=200&width=300",
+      image: "blog/blog5.png?height=200&width=300",
       date: "2025-08-07",
       readTime: "2 min read",
       // category: "Research",
@@ -45,7 +45,7 @@ export default function BlogPage() {
       title: "Breaking Down Language Barriers: How AI Can Learn to Fix Bangla Grammar",
       excerpt:
         "Exploring how synthetic data and AI can bridge the grammar gap for Bangla speakers.",
-      image: "/blog/blog4.webp?height=200&width=300",
+      image: "blog/blog4.webp?height=200&width=300",
       date: "2025-08-03",
       readTime: "4 min read",
       // category: "Research",
@@ -56,7 +56,7 @@ export default function BlogPage() {
       title: "How AI is Learning to Spot Bias (And Why It Matters More Than Ever)",
       excerpt:
         "We’re living through what researchers call “hyperpartisan” news : content written with such extreme ideological manipulation that it barely resembles reality.",
-      image: "/blog/blog3.webp?height=200&width=300",
+      image: "blog/blog3.webp?height=200&width=300",
       date: "2025-07-24",
       readTime: "6 min read",
       // category: "Research",
@@ -67,7 +67,7 @@ export default function BlogPage() {
       title: "What if our most fundamental assumption about environmental economics, that innovation leads to sustainability, is fundamentally flawed?",
       excerpt:
         "A data driven analysis on development pathways for nations.",
-      image: "/blog/blog2.webp?height=200&width=300",
+      image: "blog/blog2.webp?height=200&width=300",
       date: "2025-04-22",
       readTime: "7 min read",
       // category: "Research",
@@ -78,7 +78,7 @@ export default function BlogPage() {
       title: "Can Diffusion Models Reshape Privacy Boundaries?",
       excerpt:
         "Exploring How Diffusion Models Challenge and Redefine Privacy in AI-Generated Data",
-      image: "/blog/blog1.png?height=200&width=300",
+      image: "blog/blog1.png?height=200&width=300",
       date: "2025-03-12",
       readTime: "4 min read",
       // category: "Research",

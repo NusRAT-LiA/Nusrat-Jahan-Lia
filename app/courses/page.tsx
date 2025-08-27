@@ -316,7 +316,7 @@ export default function CoursesPage() {
     {
       id: "slm",
       title: "Building Small Language Model: From Foundations to Bangla Financial Text Generation",
-      thumbnail: "/projects/slm.png",
+      thumbnail: "projects/slm.png",
       description:
         "Learn the core principles and techniques of language models while building a small Bangla language model that generates financial articles. The course is taken offline at the Institute of Information Technology, University of Dhaka.",
       syllabus: {
