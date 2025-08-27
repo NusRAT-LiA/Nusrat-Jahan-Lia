@@ -147,7 +147,7 @@ export default function LifePage() {
       title:
         "Employment award by US Department of Justice: For technological innovations in the field of conservation and investigation",
       date: "2025-05-22",
-      image: "/events/usdj.jpeg",
+      image: "events/usdj.jpeg",
       description:
         "Recognition for  contributions to technological innovations in conservation and investigation fields.",
       link: "https://www.linkedin.com/posts/nusrat-jahan-lia-608655229_what-an-amazing-journey-with-icitapus-activity-7331540643850207232-2vbM?utm_source=share&utm_medium=member_desktop&rcm=ACoAADk6EigBqZl5OtppMAq0VC1wsrCIlCpVRPY",
@@ -157,7 +157,7 @@ export default function LifePage() {
       id: "10",
       title: "GOLD WINNER in National UIU CSE FEST BLOCKCHAIN OLYMPIAD",
       date: "2025-01-18",
-      image: "/events/uiu.jpeg",
+      image: "events/uiu.jpeg",
       description:
         "Achieved first place in the national blockchain competition!",
       link: "https://www.linkedin.com/posts/nusrat-jahan-lia-608655229_blockchain-maritimetech-supplychain-activity-7294632326947315712-5FIT?utm_source=share&utm_medium=member_desktop&rcm=ACoAADk6EigBqZl5OtppMAq0VC1wsrCIlCpVRPY",
@@ -167,7 +167,7 @@ export default function LifePage() {
       id: "9",
       title: "National Winner and Global Finalist in the IEEE IES Generative AI Challenge Hackathon 2025",
       date: "2025-02-18",
-      image: "/events/ieee.jpeg",
+      image: "events/ieee.jpeg",
       description: "Became a national winner and global finalist in IEEE's AI challenge.",
       link: "https://www.linkedin.com/posts/nusrat-jahan-lia-608655229_got-selected-as-one-of-the-top-global-finalist-activity-7308216433845379074-Kj1e?utm_source=share&utm_medium=member_desktop&rcm=ACoAADk6EigBqZl5OtppMAq0VC1wsrCIlCpVRPY",
       category: "Competition",
@@ -176,7 +176,7 @@ export default function LifePage() {
       id: "8",
       title: "Featured by US Embassy: For contribution in US department of Justice's Tech-in-conservation Initiative",
       date: "2024-10-16",
-      image: "/events/usembassy.png",
+      image: "events/usembassy.png",
       description:
         "Featured by the US Embassy for contributions to technology-driven conservation efforts.",
       link: "https://www.facebook.com/bangladesh.usembassy/posts/pfbid0DUXLkTX72Bd5wrifKLZGqRgik82e8SYowiJNgFV7YzsW73uJwz5GTb6QoWnWhPDel?rdid=d9sn99h6Bphm8lOy#",
@@ -186,7 +186,7 @@ export default function LifePage() {
       id: "7",
       title: "Organized Shorone Deyal: A gathering of 50+ young volunteers to engage in a clean-and-colour event",
       date: "2024-08-12",
-      image: "/events/paint.jpeg",
+      image: "events/paint.jpeg",
       description:
         "After the fall of a dictatorial regime, as a means of celebrating new Bangladeshi-democracy dream, we gathered young people around the country to engage in cleaning up the vandalized places and painting the walls with colours of hope.",
       link: "https://www.linkedin.com/posts/nusrat-jahan-lia-608655229_as-sabrina-karim-associate-professor-of-activity-7230593581952946177-A8gi?utm_source=share&utm_medium=member_desktop&rcm=ACoAADk6EigBqZl5OtppMAq0VC1wsrCIlCpVRPY",
@@ -196,7 +196,7 @@ export default function LifePage() {
       id: "6",
       title: "IUT National ICT Fest 2024: Third Runner Up",
       date: "2024-04-27",
-      image: "/events/game-jam.png",
+      image: "events/game-jam.png",
       description:
         "This was my first ever attempt in developing a game. This game was made based on a gameJam theme — 'It's hard to cook without deadly spells'.",
       link: "https://www.youtube.com/watch?v=skUOGGozj-A&t=1s",
@@ -207,7 +207,7 @@ export default function LifePage() {
       title:
         "Organized CARAVAN-OF-BLESSING: Launched during the sudden price-hike to help underprivileged families meet daily needs",
       date: "2024-03-30",
-      image: "/events/cob.jpg",
+      image: "events/cob.jpg",
       description:
         "The main objective of the 'Caravan of Blessings' was to sell rations to working class underprivileged families at 90-95% cheaper rate so that they purchase their necessities without feeling like they are being subjected to charity.",
       link: "https://www.linkedin.com/posts/nusrat-jahan-lia-608655229_marking-the-end-of-an-amazing-initiative-activity-7179913473970118656-hkMP?utm_source=share&utm_medium=member_desktop&rcm=ACoAADk6EigBqZl5OtppMAq0VC1wsrCIlCpVRPY",
@@ -217,7 +217,7 @@ export default function LifePage() {
       id: "4",
       title: "Organized ITverse-2023: One of Bangladesh's Largest Tech Events",
       date: "2023-11-07",
-      image: "/events/itverse.jpeg",
+      image: "events/itverse.jpeg",
       description:
         "Organized and Hosted ITverse-2023 with almost two thousand national as well as international participants and 11 sponsors.",
       link: "https://www.linkedin.com/posts/nusrat-jahan-lia-608655229_working-with-iit-software-engineers-community-activity-7127694508229632000-Gw2Y?utm_source=share&utm_medium=member_desktop&rcm=ACoAADk6EigBqZl5OtppMAq0VC1wsrCIlCpVRPY",
@@ -228,7 +228,7 @@ export default function LifePage() {
       title:
         "Organized and Hosted FlutterFrenzy: The first developers' conference in Bangladesh sponsored by Google and Flutter",
       date: "2023-05-20",
-      image: "/events/flutter.jpeg",
+      image: "events/flutter.jpeg",
       description:
         "Organized, led and Hosted FlutterFrenzy, the first ever Flutter based event in Bangladesh, sponsored by Google and Flutter.",
       link: "https://x.com/FlutterFrenzy",
@@ -238,7 +238,7 @@ export default function LifePage() {
       id: "2",
       title: "SUST SWE Technovent 2023: Hackathon Finalist",
       date: "2023-01-27",
-      image: "/events/sust-swe.jpg",
+      image: "events/sust-swe.jpg",
       description: "My first hackathon experience. We built a web3 based research collaboration platform.",
       link: "https://www.facebook.com/share/p/1EQd7wC7bL/",
       category: "Competition",
@@ -248,7 +248,7 @@ export default function LifePage() {
       title:
         "Organized Hygieia-হাইজিয়া: A hygiene awareness and free healthcare campaign for the underprivileged families",
       date: "2022-10-04",
-      image: "/events/hygieia.jpg",
+      image: "events/hygieia.jpg",
       description:
         "We tried facilitating them with hygiene products, financially assisting them in establishing bins around the corner of their habitation. One-on-one information session about 1. nutritious food, 2. adverse effects of child marriage, 3. women's wellbeing and their maintenance, 4. reproductive mindfulness. Free essential treatment for the slum people under the supervision of a doctor.",
       link: "https://www.facebook.com/share/p/16yoh8LixA/",
