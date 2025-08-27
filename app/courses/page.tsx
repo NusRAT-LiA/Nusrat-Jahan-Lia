@@ -55,7 +55,7 @@ function FullScreenPDFDialog({ module, courseId }: { module: any; courseId: stri
 
           {/* PDF Content */}
           <div className="h-[calc(100vh-80px)]">
-            <PDFViewer pdfUrl={`/courses/${courseId}/${module.slides.pdfFile}`} title={module.slides.title} />
+            <PDFViewer pdfUrl={`courses/${courseId}/${module.slides.pdfFile}`} title={module.slides.title} />
           </div>
         </div>
       )}
