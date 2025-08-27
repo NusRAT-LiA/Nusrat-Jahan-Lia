@@ -14,6 +14,8 @@
 // export default nextConfig
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: 'export',
+  basePath: '/Nusrat-Jahan-Lia', // <-- your GitHub repo name
   eslint: {
     ignoreDuringBuilds: true,
   },
@@ -21,9 +23,8 @@ const nextConfig = {
     ignoreBuildErrors: true,
   },
   images: {
-    unoptimized: true, // needed for <Image> in static export
+    unoptimized: true,
   },
-  output: 'export', // enables static HTML export for GitHub Pages or other static hosts
-}
+};
 
-export default nextConfig
+export default nextConfig;

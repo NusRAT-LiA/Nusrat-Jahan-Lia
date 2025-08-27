@@ -27,7 +27,7 @@ export function Footer() {
               {/* <Link href="https://scholar.google.com" className="text-muted-foreground hover:text-foreground">
                 <BookOpen className="h-4 w-4" />
               </Link> */}
-              <Link href="bsse1306@iit.du.ac.bd" className="text-muted-foreground hover:text-foreground">
+              <Link href="mailto:bsse1306@iit.du.ac.bd" className="text-muted-foreground hover:text-foreground">
                 <Mail className="h-4 w-4" />
               </Link>
             </div>
