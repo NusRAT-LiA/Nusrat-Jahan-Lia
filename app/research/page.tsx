@@ -51,7 +51,7 @@ export default function ResearchPage() {
       venue: "World Sleep 2025, Singapore",
       year: "2025",
       tags: ["Human-computer interaction", "Digital Health", "Gaming Disorder"],
-      poster: "/posters/world-sleep.png",
+      poster: "posters/world-sleep.png",
       posterType: "png",
     },
     {
@@ -67,7 +67,7 @@ export default function ResearchPage() {
       venue: "Association of Professional Sleep Societies. Seattle, Washington, USA",
       year: "2025",
       tags: ["Human-computer interaction", "Digital Health", "Mental Health", "Digital Media Usage"],
-      poster: "/posters/sleep2025.svg",
+      poster: "posters/sleep2025.svg",
       posterType: "svg",
     },
     {
@@ -83,7 +83,7 @@ export default function ResearchPage() {
       venue: "Digital Media and Developing Minds International Scientific Congress, Washington DC",
       year: "2025",
       tags: ["Human-computer interaction", "AI as Tutor", "Digital Media usage in schools", "Public Opinion"],
-      poster: "/posters/CS2025Poster_Hale.svg",
+      poster: "posters/CS2025Poster_Hale.svg",
       posterType: "svg",
     },
   ]

@@ -94,7 +94,7 @@ export default function WorkPage() {
       title: "Undergrad Researcher",
       organization: "Bangla Artificial Intelligence Research, Tools and Application (BARTA)",
       logo: "work/barta.png?height=80&width=80",
-      startDate: "2024-010",
+      startDate: "2024-10",
       endDate: null,
       type: "Academic",
       description: [

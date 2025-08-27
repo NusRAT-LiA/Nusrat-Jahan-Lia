@@ -16,55 +16,51 @@ export default function HomePage() {
   return (
     <div className="min-h-screen bg-background">
       {/* Hero Section */}
+
       <section className="container mx-auto px-4 py-16 md:py-24">
         <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 items-center">
-          <div className="space-y-6">
+          
+          {/* Image first on large screens */}
+          <div className="relative order-1 lg:order-1">
+            <div className="aspect-square relative overflow-hidden rounded-2xl">
+              <Image
+                src="me/me.png?height=500&width=500"
+                alt="Nusrat Lia"
+                fill
+                className="object-cover"
+              />
+            </div>
+          </div>
+
+          {/* Text second on large screens */}
+          <div className="space-y-6 order-2 lg:order-2">
             <div className="space-y-4">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight">Hi, I'm  Nusrat Jahan Lia</h1>
-              {/* <div className="flex flex-wrap gap-2">
-                <Badge variant="secondary" className="text-sm px-3 py-1">
-                  Researcher
-                </Badge>
-                <Badge variant="secondary" className="text-sm px-3 py-1">
-                  Educator
-                </Badge>
-                <Badge variant="secondary" className="text-sm px-3 py-1">
-                  Technologist
-                </Badge>
-              </div> */}
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight">
+                Hi, I'm Nusrat Jahan Lia
+              </h1>
             </div>
 
             <div className="text-sm text-muted-foreground leading-relaxed max-w-2xl">
               <p className="mb-6">
                 I am a researcher and AI engineer specializing in natural language processing, low-resource language models, human-centered applications and secured decentralized systems.
-                {/* I specialize in building small- and large-scale LLMs, creating datasets, designing architectures, and deploying models that solve real-world 
-                problems—ranging from educational technology evaluation to news bias detection and digital well-being analytics. */}
               </p>
 
               <p className="mb-6">
-                Currently, I am an Engineering Research Intern at Aramco-Ithra, collaborating with global institutions including WHO, 
-                Stony Brook Medicine, University of Washington, University of Geneva, Western University and University of Tokyo.
-                Previously, I worked with the United States Department of Justice - ICITAP, designed a platform for crowdsourced wildlife 
-                crime reporting in low-connectivity areas, leveraging custom NLP pipelines and geospatial models to analyze environmental and crime data.
+                Currently, I am an Engineering Research Intern at Aramco-Ithra, collaborating with global institutions including WHO, Stony Brook Medicine, University of Washington, University of Geneva, Western University and University of Tokyo. Previously, I worked with the United States Department of Justice - ICITAP, designed a platform for crowdsourced wildlife crime reporting in low-connectivity areas, leveraging custom NLP pipelines and geospatial models to analyze environmental and crime data.
               </p>
 
               <p className="mb-6">
-                Simultaneously, as a Contractual LLM Engineer at Global MicroLearning Solutions, I am designing and deploying large-scale LLM solutions that 
-                support engineering teams in the field with intelligent, context-aware systems.
+                Simultaneously, as a Contractual LLM Engineer at Global MicroLearning Solutions, I am designing and deploying large-scale LLM solutions that support engineering teams in the field with intelligent, context-aware systems.
               </p>
 
               <p className="mb-6">
-                At BanglaLLM, I contribute to open-source language models for low-resource Bangla language. I am currently a final year software engineering undergraduate student at University of Dhaka where I work in BARTA Lab.
-                There, I focus on low-resource and small-language-model development, design datasets, techniques, and educational resources for equitable AI deployment in Bangladesh.
-                I also serve as an instructor at BARTA, where I take language model building course.
+                At BanglaLLM, I contribute to open-source language models for low-resource Bangla language. I am currently a final year software engineering undergraduate student at University of Dhaka where I work in BARTA Lab. There, I focus on low-resource and small-language-model development, design datasets, techniques, and educational resources for equitable AI deployment in Bangladesh. I also serve as an instructor at BARTA, where I take language model building course.
               </p>
 
               <p>
-                Entrepreneurially, I am a founding member of Perspectivity - Drishtikon, the first real-time AI news aggregator for Bangla, featuring multi-axis bias detection, 
-                news summarization, and interactive bots that empower citizens with nuanced, research-backed insights.
+                Entrepreneurially, I am a founding member of Perspectivity - Drishtikon, the first real-time AI news aggregator for Bangla, featuring multi-axis bias detection, news summarization, and interactive bots that empower citizens with nuanced, research-backed insights.
               </p>
             </div>
-
 
             <div className="flex flex-wrap gap-4">
               <Button asChild>
@@ -73,31 +69,15 @@ export default function HomePage() {
                   Get in Touch
                 </Link>
               </Button>
-              
             </div>
 
             <div className="flex gap-4">
               <Link href="https://github.com/NusRAT-LiA" className="text-muted-foreground hover:text-foreground transition-colors">
                 <Github className="w-5 h-5" />
               </Link>
-              <Link
-                href="https://linkedin.com"
-                className="text-muted-foreground hover:text-foreground transition-colors"
-              >
+              <Link href="https://linkedin.com" className="text-muted-foreground hover:text-foreground transition-colors">
                 <Linkedin className="w-5 h-5" />
               </Link>
-              {/* <Link
-                href="https://scholar.google.com"
-                className="text-muted-foreground hover:text-foreground transition-colors"
-              >
-                <BookOpen className="w-5 h-5" />
-              </Link> */}
-            </div>
-          </div>
-
-          <div className="relative">
-            <div className="aspect-square relative overflow-hidden rounded-2xl ">
-              <Image src="me/me.png?height=500&width=500" alt="Nusrat Lia" fill className="object-cover" />
             </div>
           </div>
         </div>

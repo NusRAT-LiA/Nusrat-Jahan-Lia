@@ -16,19 +16,33 @@ import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/component
 import { ChevronDown, ChevronRight, Users, FileText, Clock, MapPin, Eye, BookOpen, X } from "lucide-react"
 import Image from "next/image"
 
-// PDF Viewer Component
+// // PDF Viewer Component
+// function PDFViewer({ pdfUrl, title }: { pdfUrl: string; title: string }) {
+//   return (
+//     <div className="w-full h-full">
+//       <iframe
+//         src={`${pdfUrl}#toolbar=1&navpanes=1&scrollbar=1`}
+//         className="w-full h-full border-0"
+//         title={title}
+//         style={{ minHeight: "100vh" }}
+//       />
+//     </div>
+//   )
+// }
 function PDFViewer({ pdfUrl, title }: { pdfUrl: string; title: string }) {
   return (
-    <div className="w-full h-full">
+    <div className="w-full h-full overflow-hidden">
       <iframe
-        src={`${pdfUrl}#toolbar=1&navpanes=1&scrollbar=1`}
+        src={`${pdfUrl}#toolbar=0&navpanes=0&scrollbar=0`}
         className="w-full h-full border-0"
         title={title}
-        style={{ minHeight: "100vh" }}
+        style={{ minHeight: "calc(100vh - 60px)" }} // subtracts header
       />
     </div>
   )
 }
+
+
 
 // Full Screen PDF Dialog Component
 function FullScreenPDFDialog({ module, courseId }: { module: any; courseId: string }) {
@@ -46,15 +60,28 @@ function FullScreenPDFDialog({ module, courseId }: { module: any; courseId: stri
           <div className="flex items-center justify-between p-4 border-b bg-background">
             <div>
               <h2 className="text-lg font-semibold">{module.slides.title}</h2>
-              <p className="text-sm text-muted-foreground">Module {module.module}</p>
             </div>
-            <Button variant="ghost" size="sm" onClick={() => setIsOpen(false)}>
-              <X className="w-4 h-4" />
-            </Button>
+            <div className="flex items-center gap-2">
+              {/* Download button (only visible on mobile) */}
+              <a
+                href={`courses/${courseId}/${module.slides.pdfFile}`}
+                download
+                className="md:hidden"
+              >
+                <Button variant="outline" size="sm">
+                  Download
+                </Button>
+              </a>
+
+              {/* Close button */}
+              <Button variant="ghost" size="sm" onClick={() => setIsOpen(false)}>
+                <X className="w-4 h-4" />
+              </Button>
+            </div>
           </div>
 
           {/* PDF Content */}
-          <div className="h-[calc(100vh-80px)]">
+          <div className=" hidden md:block h-[calc(100vh-80px)]">
             <PDFViewer pdfUrl={`courses/${courseId}/${module.slides.pdfFile}`} title={module.slides.title} />
           </div>
         </div>
