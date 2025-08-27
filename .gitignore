@@ -19,8 +19,7 @@ yarn-error.log*
 # env files
 .env*
 
-# vercel
-.vercel
+.DS_Store
 
 # typescript
 *.tsbuildinfo
