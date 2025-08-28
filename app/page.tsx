@@ -30,6 +30,9 @@ export default function HomePage() {
                 className="object-cover"
               />
             </div>
+              <p className="text-sm italic text-muted-foreground mt-2 text-center">
+              I picked this photo since it has Schrödinger’s dataset vibes: simultaneously well-lit and shadowed values. Much like the gap in AI utilization due to missing or under-representation.
+              </p>
           </div>
 
           {/* Text second on large screens */}
@@ -42,23 +45,26 @@ export default function HomePage() {
 
             <div className="text-sm text-muted-foreground leading-relaxed max-w-2xl">
               <p className="mb-6">
-                I am a researcher and AI engineer specializing in natural language processing, low-resource language models, human-centered applications and secured decentralized systems.
+                I am a researcher and AI engineer specializing in <strong> natural language processing, low-resource language models, human-centered applications and secured decentralized systems.</strong>
               </p>
 
               <p className="mb-6">
-                Currently, I am an Engineering Research Intern at Aramco-Ithra, collaborating with global institutions including WHO, Stony Brook Medicine, University of Washington, University of Geneva, Western University and University of Tokyo. Previously, I worked with the United States Department of Justice - ICITAP, designed a platform for crowdsourced wildlife crime reporting in low-connectivity areas, leveraging custom NLP pipelines and geospatial models to analyze environmental and crime data.
+                Currently, I am an Engineering Research Intern at Aramco-Ithra, collaborating with global institutions including <strong>WHO, Stony Brook Medicine, University of Washington, University of Geneva, Western University and University of Tokyo.</strong> Previously, I worked with the <strong>United States Department of Justice - ICITAP</strong>, designed a platform for crowdsourced wildlife crime reporting in low-connectivity areas, leveraging <strong>custom NLP pipelines, geospatial and predictive models</strong> to analyze environmental and crime data.
               </p>
 
               <p className="mb-6">
-                Simultaneously, as a Contractual LLM Engineer at Global MicroLearning Solutions, I am designing and deploying large-scale LLM solutions that support engineering teams in the field with intelligent, context-aware systems.
+                Simultaneously, as a Contractual LLM Engineer at Global MicroLearning Solutions, I am designing and deploying <strong> large-scale LLM solutions </strong> that support engineering teams in the field with intelligent, context-aware systems.
               </p>
 
               <p className="mb-6">
-                At BanglaLLM, I contribute to open-source language models for low-resource Bangla language. I am currently a final year software engineering undergraduate student at University of Dhaka where I work in BARTA Lab. There, I focus on low-resource and small-language-model development, design datasets, techniques, and educational resources for equitable AI deployment in Bangladesh. I also serve as an instructor at BARTA, where I take language model building course.
+                At BanglaLLM, I contribute to open-source language models for low-resource Bangla language. I am currently a final year software engineering undergraduate student at University of Dhaka where I work in BARTA Lab. There, I focus on <strong>low-resource and small-language-model development, design datasets, techniques, and educational resources for equitable AI deployment in Bangladesh.</strong> I also serve as an <strong>instructor</strong> at BARTA, where <strong>I take language model building course.</strong>
               </p>
 
-              <p>
-                Entrepreneurially, I am a founding member of Perspectivity - Drishtikon, the first real-time AI news aggregator for Bangla, featuring multi-axis bias detection, news summarization, and interactive bots that empower citizens with nuanced, research-backed insights.
+              <p className="mb-6">
+                Entrepreneurially, I am a <strong>founding engineer</strong> of Perspectivity - Drishtikon, the first real-time AI news aggregator for Bangla, featuring multi-axis bias detection, news summarization, and interactive bots that empower citizens with nuanced, research-backed insights.
+              </p>
+              <p className="mb-6">
+                And... I paint. Some like to call me an artist but I am just someone who loves to create and express.
               </p>
             </div>
 
