@@ -153,7 +153,7 @@ const projects: Project[] = [
       "An academic project for Distributed Systems course, taken during my fifth semester of Software Engineering major.",
     technologies: ["React", "FastAPI", "Python", "OAuth", "MinIO", "Docker", "JavaScript", "Nginx", "PostgreSQL"],
     categories: [ "Web Development"],
-    image: "projects/StackOverflow-Lite.png?height=400&width=600",
+    image: "projects/StackOverFlow-Lite.png?height=400&width=600",
     links: {
       github: "https://github.com/NusRAT-LiA/DistributedSystem-Implementation",
       document: "https://docs.google.com/document/d/1ybrJHoyNwqBF87LoZmAsKnRCIoknRED6e-0u8dmpHxw/edit?usp=sharing",
