@@ -9,6 +9,15 @@ import { useState } from "react"
 export default function ResearchPage() {
   const publications = [
     {
+      title: "Morphologically aware tokenization for extremely low resource Indigenous language - Chakma",
+      authors: "Nusrat Jahan Lia; Shubhashis Roy Dipta; Adity Khisha",
+      affiliations: ["University of Dhaka", "University of Maryland","BARTA"],
+      venue: "In Progress",
+      year: "2026",
+      // type: "Conference",
+      tags: ["NLP", "Indigenous Language", "Tokenization"],
+    },
+    {
       title: "Detecting Political Bias from Bangla Article Framing",
       authors: "Nusrat Jahan Lia; Shubhashis Roy Dipta; Abdullah Khan Zehady, phD; Dr. Shubhra Kanti Karmaker; Naymul Islam",
       affiliations: ["University of Dhaka", "University of Maryland", "University of Central Florida", "Perspectivity"],
