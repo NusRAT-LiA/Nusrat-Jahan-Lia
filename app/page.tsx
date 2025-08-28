@@ -31,7 +31,7 @@ export default function HomePage() {
               />
             </div>
               <p className="text-sm italic text-muted-foreground mt-2 text-center">
-              I picked this photo since it has Schrödinger’s dataset vibes: simultaneously well-lit and shadowed values.
+              I picked this photo since it has Schrödinger’s dataset vibes: simultaneously well-lit and shadowed entries.
               </p>
           </div>
 
