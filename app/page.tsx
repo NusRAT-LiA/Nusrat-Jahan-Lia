@@ -57,7 +57,7 @@ export default function HomePage() {
               </p>
 
               <p className="mb-6">
-                At BanglaLLM, I contribute to open-source language models for low-resource Bangla language. I am currently a final year software engineering undergraduate student at University of Dhaka where I work in BARTA Lab. There, I focus on <strong>low-resource and small-language-model development, design datasets, techniques, and educational resources for equitable AI deployment in Bangladesh.</strong> I also serve as an <strong>instructor</strong> at BARTA, where <strong>I take language model building course.</strong>
+                I am currently a final year software engineering undergraduate student at University of Dhaka where I work in BARTA Lab. There, I focus on <strong>low-resource and small-language-model development, design datasets, techniques, and educational resources for equitable AI deployment in Bangladesh.</strong> I also serve as an <strong>instructor</strong> at BARTA, where <strong>I take language model building course.</strong> At BanglaLLM, I work with amazing researchers and developers building open-source language models for low-resource Bangla language. 
               </p>
 
               <p className="mb-6">
