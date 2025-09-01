@@ -301,7 +301,7 @@ export default function ProjectsPage() {
           </p>
         </div>
 
-        {/* Featured Projects */}
+       {/* Featured Projects
         <section className="mb-12">
           <h2 className="text-2xl font-bold mb-6">Featured Projects</h2>
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
@@ -349,7 +349,7 @@ export default function ProjectsPage() {
                       )}
                     </div>
 
-                    {/* Quick Access Links */}
+                    
                     <div className="flex flex-wrap gap-1">
                       {project.links.github && (
                         <Button variant="ghost" size="sm" asChild className="h-6 px-2">
@@ -409,7 +409,7 @@ export default function ProjectsPage() {
               </Card>
             ))}
           </div>
-        </section>
+        </section> */}
 
         {/* Filters and Search
         <div className="space-y-4 mb-8">
@@ -490,7 +490,7 @@ export default function ProjectsPage() {
         {/* All Projects */}
         <section>
           <div className="flex items-center justify-between mb-6">
-            <h2 className="text-2xl font-bold">All Projects</h2>
+            <h2 className="text-2xl font-bold">Selected Projects</h2>
             <span className="text-sm text-muted-foreground">
               {filteredProjects.length} project{filteredProjects.length !== 1 ? "s" : ""} found
             </span>
@@ -552,6 +552,7 @@ function ProjectCard({ project, viewMode }: { project: Project; viewMode: "grid"
                   <Badge variant={project.status === "completed" ? "default" : "secondary"}>{project.status}</Badge>
                 </div>
                 <p className="text-muted-foreground">{project.description}</p>
+                
               </div>
               <span className="text-sm text-muted-foreground">{project.year}</span>
             </div>
@@ -724,12 +725,12 @@ function ProjectDetails({ project }: { project: Project }) {
         <div className="space-y-4">
           <div>
             <h3 className="font-semibold mb-2">Project Overview</h3>
-            <p className="text-muted-foreground">{project.fullDescription}</p>
+            <p className="text-muted-foreground text-xs">{project.fullDescription}</p>
           </div>
 
           <div>
             <h3 className="font-semibold mb-2">Motivation</h3>
-            <p className="text-muted-foreground">{project.motivation}</p>
+            <p className="text-muted-foreground text-xs">{project.motivation}</p>
           </div>
         </div>
 

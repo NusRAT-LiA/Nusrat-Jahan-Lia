@@ -4,6 +4,12 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Github, Linkedin, Mail, ExternalLink, BookOpen, Users, Briefcase, FileText } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
+import Blog from "./blog/page"
+import Courses from "./courses/page"
+import Work from "./work/page"
+import Research from "./research/page"
+import Projects from "./projects/page"
+import Life from "./life/page"
 
 export default function HomePage() {
   const newsItems = [
@@ -90,7 +96,7 @@ export default function HomePage() {
       </section>
 
       {/* Quick Navigation */}
-      <section className="container mx-auto px-4 py-12">
+      {/* <section className="container mx-auto px-4 py-12">
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
           <Card className="group hover:shadow-lg transition-shadow cursor-pointer">
             <Link href="/research">
@@ -144,7 +150,28 @@ export default function HomePage() {
             </Link>
           </Card>
         </div>
+      </section> */}
+      <section>
+        <Courses/>
       </section>
+      <section>
+        <Research/>
+      </section>
+      
+      <section>
+        <Work/>
+      </section>
+      <section>
+        <Projects/>
+      </section>
+      <section>
+        <Blog />
+      </section>
+      <section>
+        <Life/>
+      </section>
+      
+      
 
       {/* Latest News
       <section className="container mx-auto px-4 py-12">

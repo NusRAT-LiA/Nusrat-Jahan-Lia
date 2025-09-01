@@ -62,7 +62,7 @@ export default function WorkPage() {
       type: "Government-Affiliated",
       description: [
         "Designed a mobile-first, crowdsourced wildlife crime reporting platform tailored for rural and low-connectivity environments in the Sundarbans.",
-        "Overcame challenges of sparse and noisy community reports by developing custom NLP pipelines and geospatial models optimized for low-resource inputs",
+        "Handled sparse and noisy community reports by developing custom NLP pipelines and geospatial models optimized for low-resource inputs",
         "Leveraged machine learning to analyze spatial crime data and forecast environmental degradation hotspots",
         "Designed and developed a gaming application to educate Bangladeshi and International Youth about wildlife and biodiversity conservation and emphasize long-term stewardship ethics"
       ],
@@ -98,7 +98,7 @@ export default function WorkPage() {
       endDate: null,
       type: "Academic",
       description: [
-        "Developing dataset and techniques for indigenous language (like Chakma) models to ensure equitable AI deployment in Bangladesh.",
+        "Developing dataset and techniques for indigenous language (like Chakma) models.",
         "Designed and directed Small-language-model building course as an instructor of BARTA",
         "Developed Educational Resource Allocation AI-Agent for the Government of Bangladesh."     
       ],
@@ -278,7 +278,7 @@ export default function WorkPage() {
                   </CardHeader>
 
                   <CardContent className="space-y-6">
-                  <ul className="space-y-2 text-muted-foreground list-disc list-inside">
+                  <ul className="space-y-2 text-muted-foreground list-disc list-inside text-xs">
                     {position.description.map((point: string, idx: number) => (
                       <li key={idx}>{point}</li>
                     ))}
@@ -338,7 +338,7 @@ export default function WorkPage() {
                             </h4>
                             <ul className="space-y-2">
                               {position.achievements.map((achievement, idx) => (
-                                <li key={idx} className="flex items-start gap-2 text-sm">
+                                <li key={idx} className="flex items-start gap-2 text-xs">
                                   <div className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0" />
                                   {achievement}
                                 </li>
