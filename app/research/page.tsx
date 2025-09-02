@@ -34,7 +34,7 @@ export default function ResearchPage() {
       year: "2026",
       // type: "Conference",
       tags: ["SIG-Inclusion and Accessibility in Educational Assessment", "Computers and Learning, Evaluation, Diversity", "Human-computer interaction"],
-      link: "https://www.aera.net/",
+      // link: "https://www.aera.net/",
     },
     {
       title: "A Comprehensive Evaluation of the Educational Apps in the Google Play Store: An Exploratory Study",
@@ -44,7 +44,7 @@ export default function ResearchPage() {
       year: "2026",
       // type: "Journal",
       tags: ["Computers and Learning, Evaluation, Diversity", "Human-computer interaction"],
-      link: "https://www.aera.net/",
+      // link: "https://www.aera.net/",
     },
     {
       title: 'Does Gaming Disorder Symptom Status Predict Poorer Sleep Quality?',
@@ -171,13 +171,13 @@ export default function ResearchPage() {
                           {pub.posterType === "svg" ? "View Poster" : "Download Poster"}
                         </Button>
                       )}
-                      {pub.link && (
+                      {/* {pub.link && (
                         <Button size="sm" variant="ghost" asChild>
                           <a href={pub.link} target="_blank" rel="noopener noreferrer">
                             <ExternalLink className="w-3 h-3" />
                           </a>
                         </Button>
-                      )}
+                      )} */}
                     </div>
                   </div>
                 </CardContent>

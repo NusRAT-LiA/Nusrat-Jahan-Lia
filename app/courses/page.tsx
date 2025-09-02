@@ -256,10 +256,10 @@ function CourseCard({
           {hasModules && (
             <Collapsible open={isExpanded} onOpenChange={onToggleExpand}>
               <CollapsibleTrigger asChild>
-                <Button variant="ghost" className="w-full justify-between p-0 h-auto">
+                {/* <Button variant="ghost" className="w-full justify-between p-0 h-auto">
                   <span className="font-medium">Course Modules ({course.modules.length} modules)</span>
                   {isExpanded ? <ChevronDown className="w-4 h-4" /> : <ChevronRight className="w-4 h-4" />}
-                </Button>
+                </Button> */}
               </CollapsibleTrigger>
               <CollapsibleContent className="space-y-4 mt-4">
                 {course.modules.map((module: any) => (
@@ -445,7 +445,7 @@ export default function CoursesPage() {
 
   return (
     <div className="min-h-screen bg-background">
-      <div className="container mx-auto px-4 py-16">
+      <div className="container mx-auto px-4 pt-16 pb-0">
         {/* Header */}
         <div className="text-center space-y-4 mb-16">
           <h1 className="text-4xl md:text-5xl font-bold tracking-tight">Courses & Teaching</h1>
@@ -460,7 +460,8 @@ export default function CoursesPage() {
             <CourseCard
               key={course.id}
               course={course}
-              isExpanded={expandedCourse === course.id}
+              // isExpanded={expandedCourse === course.id}
+              isExpanded={true}
               onToggleExpand={() => setExpandedCourse(expandedCourse === course.id ? null : course.id)}
             />
           ))}

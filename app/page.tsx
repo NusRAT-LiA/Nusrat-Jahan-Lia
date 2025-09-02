@@ -87,7 +87,7 @@ export default function HomePage() {
               <Link href="https://github.com/NusRAT-LiA" className="text-muted-foreground hover:text-foreground transition-colors">
                 <Github className="w-5 h-5" />
               </Link>
-              <Link href="https://linkedin.com" className="text-muted-foreground hover:text-foreground transition-colors">
+              <Link href="https://www.linkedin.com/in/nusrat-jahan-lia-608655229/" className="text-muted-foreground hover:text-foreground transition-colors">
                 <Linkedin className="w-5 h-5" />
               </Link>
             </div>

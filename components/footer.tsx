@@ -15,7 +15,7 @@ export function Footer() {
               {/* Assistant Professor at MIT exploring the intersection of AI, education, and human-computer interaction. */}
             </p>
             <div className="flex space-x-4">
-              <Link href="https://github.com/NusRaT" className="text-muted-foreground hover:text-foreground">
+              <Link href="https://github.com/NusRAT-LiA" className="text-muted-foreground hover:text-foreground">
                 <Github className="h-4 w-4" />
               </Link>
               <Link href="https://www.linkedin.com/in/nusrat-jahan-lia-608655229/" className="text-muted-foreground hover:text-foreground">
