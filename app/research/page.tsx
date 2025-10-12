@@ -9,23 +9,26 @@ import { useState } from "react"
 export default function ResearchPage() {
   const publications = [
     {
-      title: "Morphologically aware tokenization for extremely low resource Indigenous language - Chakma",
-      authors: "Nusrat Jahan Lia; Shubhashis Roy Dipta; Adity Khisha",
-      affiliations: ["University of Dhaka", "University of Maryland","BARTA"],
-      venue: "In Progress",
-      year: "2026",
-      // type: "Conference",
-      tags: ["NLP", "Indigenous Language", "Tokenization"],
-    },
-    {
-      title: "Detecting Political Bias from Bangla Article Framing",
-      authors: "Nusrat Jahan Lia; Shubhashis Roy Dipta; Abdullah Khan Zehady, phD; Dr. Shubhra Kanti Karmaker; Naymul Islam",
-      affiliations: ["University of Dhaka", "University of Maryland", "University of Central Florida", "Perspectivity"],
-      venue: "In Progress",
-      year: "2026",
+      title: "Read Between the Lines: A Benchmark for Uncovering Political Bias in Bangla News Articles",
+      authors: "Nusrat Jahan Lia; Shubhashis Roy Dipta, PhD; Dr. Abdullah Khan Zehady; Naymul Islam; Madhusodan Chakraborty; Abdullah Al Wasif",
+      affiliations: ["University of Dhaka", "University of Maryland", "Perspectivity"],
+      venue: "In Review: AACL IJCNLP",
+      year: "2025",
       // type: "Conference",
       tags: ["LLM", "Bangla NLP", "Bias Detection"],
+      link: "https://arxiv.org/abs/2510.03898",
     },
+    {
+      title: "Exploring Cross-Lingual Knowledge Transfer via Transliteration-Based MLM Fine-Tuning for Critically Low-resource Chakma Language",
+      authors: "Adity Khisa; Nusrat Jahan Lia; Tasnim Mahfuz Nafis; Zarif Masud; Tanzir Pial, PhD; Dr.Shebuti Rayana; Dr.Ahmedul Kabir",
+      affiliations: ["University of Dhaka", "BARTA", "State University of New York, Old Westbury", "Stony Brook University", "Toronto Metropolitan University"],
+      venue: "In Review: AACL IJCNLP",
+      year: "2025",
+      // type: "Conference",
+      tags: ["MLM", "Large Language Model", "Tokenization"],
+      link: "https://arxiv.org/submit/6876144/view",
+    },
+    
     {
       title: "Evaluating the Inclusivity and Accessibility of Educational Apps on the Google Play Store",
       authors: "Nusrat Jahan Lia; Nahida Sultana; Sabrina Shajeen Alam; Md Mamunur Rashid; Aymaan Islam",
@@ -171,13 +174,13 @@ export default function ResearchPage() {
                           {pub.posterType === "svg" ? "View Poster" : "Download Poster"}
                         </Button>
                       )}
-                      {/* {pub.link && (
+                       {pub.link && (
                         <Button size="sm" variant="ghost" asChild>
                           <a href={pub.link} target="_blank" rel="noopener noreferrer">
                             <ExternalLink className="w-3 h-3" />
                           </a>
                         </Button>
-                      )} */}
+                      )} 
                     </div>
                   </div>
                 </CardContent>

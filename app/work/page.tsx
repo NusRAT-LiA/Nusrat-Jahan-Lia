@@ -15,7 +15,7 @@ export default function WorkPage() {
   const positions = [
     {
       id: "aramco-2024",
-      title: "Engineering Research Intern",
+      title: "Research Intern",
       organization: "Aramco-Ithra",
       logo: "work/aramco.jpg?height=80&width=80",
       link: "https://www.aramco.com/",
@@ -24,9 +24,10 @@ export default function WorkPage() {
       endDate: null,
       type: "Academic",
       description: [
-        "Led projects and worked in collaboration with WHO, Stony Brook Medicine, McGill University, University of Geneva, University of Tokyo.",
+        "Led projects and worked in collaboration with WHO, Stony Brook Medicine, McGill University, University of Geneva, University of Tokyo and other institutions (from around 35 countries)",
+        "Engineered Knowledge Graphs integrating worldwide data on Digital Health and Technology Usage to enable semantic analysis and cross-country insights.",
         "Developed coding schemes and agentic LLMs to evaluate educational games on the Google Play Store.",
-        "Co-authored digital well-being and technology researches",
+        "Co-authored 6 researches on digital well-being, education and technology usage.",
       ],
        achievements: [
         "Accepted and Presented - \"Does Spending “Too Much Time Online” Predict Sleep Health and Mental Health?\"  at - 39th Annual Meeting of the Associated Professional Sleep Societies (APSS)",
@@ -34,6 +35,29 @@ export default function WorkPage() {
         "Accepted and Presented - \"Does a gaming disorder severity predict worse sleep quality?\" at - World Sleep 2025, Singapore",
         "In Review - \"Evaluating the Inclusivity and Accessibility of Educational Apps on the Google Play Store\" at - 2026 American Educational Research Association (AERA) Annual Meeting",
         "In Review - \"A Comprehensive Evaluation of the Educational Apps in the Google Play Store: An Exploratory Study\" at - 2026 American Educational Research Association (AERA) Annual Meeting",
+      ],
+    },
+    {
+      id: "iaio",
+      title: "Instructor: AI Recommender Systems",
+      organization: "International AI Olympiad",
+      logo: "work/iaio.png?height=80&width=80",
+      startDate: "2025-09",
+      endDate: null,
+      type: "Academic",
+      description:  [
+        "Teaching : ",
+        "User-based and item-based filtering",
+        "Similarity metrics (cosine similarity, Pearson correlation)",
+        "Content-Based Filtering",
+        "TF-IDF and word embeddings",
+        "Feature engineering for recommendation models",
+        "Combining collaborative and content-based filtering",
+        "Matrix factorization (SVD, ALS algorithms)",
+        "Deep learning approaches (Neural Collaborative Filtering, Autoencoders for recommendations)"
+      ],
+      link: "https://www.iaio-official.org/",
+      achievements: [
       ],
     },
     {
@@ -82,7 +106,7 @@ export default function WorkPage() {
       type: "Academic",
       description: [
         "BanglaLLM introduced many of the first open-source bangla language models",
-        "Working on low-resource language models and Small-language-models"     
+        "Working on low-resource language models"     
       ],
 
       achievements: [
@@ -98,7 +122,7 @@ export default function WorkPage() {
       endDate: null,
       type: "Academic",
       description: [
-        "Developing dataset and techniques for indigenous language (like Chakma) models.",
+        "Co-authored the first paper on Chakma-language Knowledge transfer using MLM. Developing dataset and techniques for indigenous language (like Chakma) models.",
         "Designed and directed Small-language-model building course as an instructor of BARTA",
         "Developed Educational Resource Allocation AI-Agent for the Government of Bangladesh."     
       ],

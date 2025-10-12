@@ -51,26 +51,27 @@ export default function HomePage() {
 
             <div className="text-sm text-muted-foreground leading-relaxed max-w-2xl">
               <p className="mb-6">
-                I am a researcher and AI engineer specializing in <strong> natural language processing, low-resource language models, human-centered applications and secured decentralized systems.</strong>
+                I am a researcher and AI engineer specializing in <strong> natural language processing, human-centered applications and secured decentralized systems.</strong>
               </p>
 
               <p className="mb-6">
-                Currently, I am an Engineering Research Intern at Aramco-Ithra, collaborating with global institutions including <strong>WHO, Stony Brook Medicine, University of Washington, University of Geneva, Western University and University of Tokyo.</strong> Previously, I worked with the <strong>United States Department of Justice - ICITAP</strong>, designed a platform for crowdsourced wildlife crime reporting in low-connectivity areas, leveraging <strong>custom NLP pipelines, geospatial and predictive models</strong> to analyze environmental and crime data.
+                Currently, I am a Research Intern at Aramco-Ithra, collaborating with global institutions including <strong>WHO, UN, Stony Brook Medicine, University of Washington, University of Geneva, Western University, University of Tokyo and research institutes from 35 countries.</strong> Previously, I worked with the <strong>United States Department of Justice - ICITAP</strong>, designed a platform for secure crowdsourced wildlife crime reporting in low-connectivity areas, leveraging <strong>custom NLP pipelines, geospatial and predictive models</strong> to analyze environmental and crime data.
+              </p>
+
+             
+              <p className="mb-6">
+                I am currently a final year software engineering undergraduate student at University of Dhaka where I work in BARTA Lab. There, I focus on <strong>low-resource and small-language-model development, design datasets, techniques, and educational resources .</strong> I also serve as an <strong>instructor</strong> at BARTA, where <strong>I teach language model building course.</strong> At <strong>BanglaLLM</strong>, I work with amazing researchers and developers building open-source language models for low-resource Bangla language. This year, I am also serving as an Instructor for <strong>International AI Olympiad</strong>, teaching <strong>AI Recommender Systems</strong>.
               </p>
 
               <p className="mb-6">
-                Simultaneously, as a Contractual LLM Engineer at Global MicroLearning Solutions, I am designing and deploying <strong> large-scale LLM solutions </strong> that support engineering teams in the field with intelligent, context-aware systems.
-              </p>
-
-              <p className="mb-6">
-                I am currently a final year software engineering undergraduate student at University of Dhaka where I work in BARTA Lab. There, I focus on <strong>low-resource and small-language-model development, design datasets, techniques, and educational resources for equitable AI deployment in Bangladesh.</strong> I also serve as an <strong>instructor</strong> at BARTA, where <strong>I take language model building course.</strong> At BanglaLLM, I work with amazing researchers and developers building open-source language models for low-resource Bangla language. 
+                As a Contractual LLM Engineer at Global MicroLearning Solutions, I am designing and deploying <strong> large-scale LLM solutions </strong> that support engineering teams in the field with intelligent, context-aware systems.
               </p>
 
               <p className="mb-6">
                 Entrepreneurially, I am a <strong>founding engineer</strong> of Perspectivity - Drishtikon, the first real-time AI news aggregator for Bangla, featuring multi-axis bias detection, news summarization, and interactive bots that empower citizens with nuanced, research-backed insights.
               </p>
               <p className="mb-6">
-                And... I paint. Some like to call me an artist but I am just someone who loves to create and express.
+                And... I paint. Some like to call me an artist but I am just someone who expresses this way.
               </p>
             </div>
 
