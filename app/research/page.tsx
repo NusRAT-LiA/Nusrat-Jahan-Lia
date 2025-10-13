@@ -26,7 +26,7 @@ export default function ResearchPage() {
       year: "2025",
       // type: "Conference",
       tags: ["MLM", "Large Language Model", "Tokenization"],
-      link: "https://arxiv.org/submit/6876144/view",
+      link: "https://arxiv.org/abs/2510.09032",
     },
     
     {
