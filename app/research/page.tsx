@@ -30,7 +30,7 @@ export default function ResearchPage() {
     },
     
     {
-      title: "Evaluating the Inclusivity and Accessibility of Educational Apps on the Google Play Store",
+      title: "Evaluating the Inclusivity and Accessibility of Educational Apps (Games) on the Google Play Store",
       authors: "Nusrat Jahan Lia; Nahida Sultana; Sabrina Shajeen Alam; Md Mamunur Rashid; Aymaan Islam",
       affiliations: ["University of Dhaka", "Western University, CA", "ITHRA, King Abdulaziz Center for World Culture, Dammam"],
       venue: "In Review: American Educational Research Association (AERA) Annual Meeting",
@@ -40,7 +40,7 @@ export default function ResearchPage() {
       // link: "https://www.aera.net/",
     },
     {
-      title: "A Comprehensive Evaluation of the Educational Apps in the Google Play Store: An Exploratory Study",
+      title: "A Comprehensive Evaluation of the Educational Apps (Games) in the Google Play Store: An Exploratory Study",
       authors: "Nahida Sultana; Sabrina Shajeen Alam; Nusrat Jahan Lia; Md Mamunur Rashid; Aymaan Islam",
       affiliations: ["University of Dhaka", "Western University, CA", "ITHRA, King Abdulaziz Center for World Culture, Dammam"],
       venue: "In Review: American Educational Research Association (AERA) Annual Meeting",
