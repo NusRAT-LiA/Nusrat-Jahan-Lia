@@ -33,6 +33,7 @@ export default function WorkPage() {
         "Accepted and Presented - \"Does Spending “Too Much Time Online” Predict Sleep Health and Mental Health?\"  at - 39th Annual Meeting of the Associated Professional Sleep Societies (APSS)",
         "Accepted and Presented - \"International Public Opinion on Digital Media Use for Youth and Schools\" at -  2025 Digital Media and Developing Minds International Scientific Congress",
         "Accepted and Presented - \"Does a gaming disorder severity predict worse sleep quality?\" at - World Sleep 2025, Singapore",
+        "Submitted  - \"Adult Attitudes about School Smartphone Bans: A Global Survey of 35 Countries\" at - The Journal of American Medical Association (JAMA)",
         "In Review - \"Evaluating the Inclusivity and Accessibility of Educational Apps on the Google Play Store\" at - 2026 American Educational Research Association (AERA) Annual Meeting",
         "In Review - \"A Comprehensive Evaluation of the Educational Apps in the Google Play Store: An Exploratory Study\" at - 2026 American Educational Research Association (AERA) Annual Meeting",
       ],
