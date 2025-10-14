@@ -50,6 +50,16 @@ export default function ResearchPage() {
       // link: "https://www.aera.net/",
     },
     {
+      title: "Adult Attitudes about School Smartphone Bans: A Global Survey of 35 Countries",
+      authors: "Dimitri A. Christakis, MD, MPH; Nusrat Jahan Lia; Lauren Hale, PhD; Md Mamunur Rashid",
+      affiliations: ["Renaissance School of Medicine, Stony Brook University", "Seattle Children's Research Institute, Seattle Children's Hospital", "University of Dhaka", "ITHRA, King Abdulaziz Center for World Culture, Dammam"],
+      venue: "JAMA Pediatrics",
+      year: "2025",
+      // type: "Journal",
+      tags: ["Digital Technology Usage", "Human-computer interaction"],
+      // link: "https://www.aera.net/",
+    },
+    {
       title: 'Does Gaming Disorder Symptom Status Predict Poorer Sleep Quality?',
       authors:
         "Nusrat Jahan Lia; Lauren Hale, PhD; Justin Thomas, PhD; Dimitri A. Christakis, MD, MPH; Mamunar Rashid, PhD",
