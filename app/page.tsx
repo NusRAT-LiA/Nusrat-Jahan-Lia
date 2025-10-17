@@ -55,7 +55,7 @@ export default function HomePage() {
               </p>
 
               <p className="mb-6">
-                Currently, I am a Research Intern at Aramco-Ithra, collaborating with global institutions including <strong>WHO, UN, Stony Brook Medicine, University of Washington, University of Geneva, Western University, University of Tokyo and research institutes from 35 countries.</strong> Previously, I worked with the <strong>United States Department of Justice - ICITAP</strong>, designed a platform for secure crowdsourced wildlife crime reporting in low-connectivity areas, leveraging <strong>custom NLP pipelines, geospatial and predictive models</strong> to analyze environmental and crime data.
+                Currently, I am a Research Intern at Aramco-Ithra, collaborating with global institutions including <strong>WHO, UN, Stony Brook Medicine, University of Washington, University of Geneva, Western University, University of Tokyo and research institutes from 35 countries.</strong> Previously, I worked with the <strong>United States Department of Justice - ICITAP</strong>, designed a platform for secure crowdsourced wildlife crime reporting in low-connectivity areas, leveraging <strong>custom NLP pipelines, geospatial and predictive models</strong> to analyze environmental and crime data. There, I've worked on a gaming application to educate International Youth about wildlife crime and biodiversity conservation.
               </p>
 
              
