@@ -96,24 +96,7 @@ export default function WorkPage() {
        
       ],
     },
-    {
-      id: "banglallM",
-      title: "LLM dev and Analyst",
-      organization: "BanglaLLM",
-      logo: "work/banglallm.jpeg?height=80&width=80",
-      link: "https://huggingface.co/BanglaLLM",
-      startDate: "2024-07",
-      endDate: null,
-      type: "Academic",
-      description: [
-        "BanglaLLM introduced many of the first open-source bangla language models",
-        "Working on low-resource language models"     
-      ],
-
-      achievements: [
-       
-      ],
-    },
+    
     {
       id: "barta",
       title: "Undergrad Researcher",
@@ -134,7 +117,7 @@ export default function WorkPage() {
     },
     {
       id: "perspectivity",
-      title: "Founding Researcher and Engineer",
+      title: "Founding Researcher",
       organization: "Perspectivity - Drishtikon",
       logo: "work/perspectivity.svg?height=80&width=80",
       link: "https://perspectivity.co/",
@@ -151,6 +134,24 @@ export default function WorkPage() {
 
       achievements: [
       
+      ],
+    },
+    {
+      id: "banglallM",
+      title: "Member",
+      organization: "BanglaLLM",
+      logo: "work/banglallm.jpeg?height=80&width=80",
+      link: "https://huggingface.co/BanglaLLM",
+      startDate: "2024-07",
+      endDate: null,
+      type: "Academic",
+      description: [
+        "BanglaLLM introduced many of the first open-source bangla language models",
+        // "Working on low-resource language models"     
+      ],
+
+      achievements: [
+       
       ],
     },
     // {
