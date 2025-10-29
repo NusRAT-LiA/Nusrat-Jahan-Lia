@@ -47,15 +47,7 @@ export default function WorkPage() {
       endDate: null,
       type: "Academic",
       description:  [
-        "Teaching : ",
-        "User-based and item-based filtering",
-        "Similarity metrics (cosine similarity, Pearson correlation)",
-        "Content-Based Filtering",
-        "TF-IDF and word embeddings",
-        "Feature engineering for recommendation models",
-        "Combining collaborative and content-based filtering",
-        "Matrix factorization (SVD, ALS algorithms)",
-        "Deep learning approaches (Neural Collaborative Filtering, Autoencoders for recommendations)"
+        "Teaching: Covers collaborative and content-based recommendation systems, including similarity metrics, feature engineering, hybrid methods, matrix factorization, and deep learning approaches for personalized recommendations.",
       ],
       link: "https://www.iaio-official.org/",
       achievements: [
