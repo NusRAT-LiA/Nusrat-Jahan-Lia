@@ -6,27 +6,42 @@ import { Badge } from "@/components/ui/badge"
 import { ExternalLink, FileText } from "lucide-react"
 import { useState } from "react"
 
+type Publication = {
+  title: string
+  authors: string
+  affiliations: string[]
+  venue: string
+  year: string
+  tags?: string[]
+  link?: string
+  poster?: string
+  posterType?: string
+  photo?: string
+}
+
 export default function ResearchPage() {
-  const publications = [
+  const publications: Publication[] = [
     {
       title: "Read Between the Lines: A Benchmark for Uncovering Political Bias in Bangla News Articles",
       authors: "Nusrat Jahan Lia; Shubhashis Roy Dipta, PhD; Dr. Abdullah Khan Zehady; Naymul Islam; Madhusodan Chakraborty; Abdullah Al Wasif",
       affiliations: ["University of Dhaka", "University of Maryland", "Perspectivity"],
-      venue: "Accepted: AACL IJCNLP BLP",
+      venue: "Accepted: AACL IJCNLP BLP; To be published: ACL Anthology",
       year: "2025",
       // type: "Conference",
-      tags: ["LLM", "Bangla NLP", "Bias Detection"],
+      // tags: ["LLM", "Bangla NLP", "Bias Detection"],
       link: "https://arxiv.org/abs/2510.03898",
+      photo: "research/fig1.png",
     },
     {
       title: "Exploring Cross-Lingual Knowledge Transfer via Transliteration-Based MLM Fine-Tuning for Critically Low-resource Chakma Language",
       authors: "Adity Khisa; Nusrat Jahan Lia; Tasnim Mahfuz Nafis; Zarif Masud; Tanzir Pial, PhD; Dr.Shebuti Rayana; Dr.Ahmedul Kabir",
       affiliations: ["University of Dhaka", "BARTA", "State University of New York, Old Westbury", "Stony Brook University", "Toronto Metropolitan University"],
-      venue: "Accepted: AACL IJCNLP BLP",
+      venue: "Accepted: AACL IJCNLP BLP; To be published: ACL Anthology",
       year: "2025",
       // type: "Conference",
-      tags: ["MLM", "Large Language Model", "Tokenization"],
+      // tags: ["MLM", "Large Language Model", "Tokenization"],
       link: "https://arxiv.org/abs/2510.09032",
+      photo: "research/chakma.png",
     },
     
 
@@ -34,11 +49,12 @@ export default function ResearchPage() {
       title: "Adult Attitudes about School Smartphone Bans: A Global Survey of 35 Countries",
       authors: "Dimitri A. Christakis, MD, MPH; Nusrat Jahan Lia; Lauren Hale, PhD; Md Mamunur Rashid",
       affiliations: ["Renaissance School of Medicine, Stony Brook University", "Seattle Children's Research Institute, Seattle Children's Hospital", "University of Dhaka", "ITHRA, King Abdulaziz Center for World Culture, Dammam"],
-      venue: "Accepted: The Journal of American Medical Association",
+      venue: "Accepted, in press: The Journal of American Medical Association",
       year: "2025",
       // type: "Journal",
-      tags: ["Digital Technology Usage", "Human-computer interaction"],
+      // tags: ["Digital Technology Usage", "Human-computer interaction"],
       // link: "https://www.aera.net/",
+      photo: "research/jama.png",
     },
     {
       title: 'Does Gaming Disorder Symptom Status Predict Poorer Sleep Quality?',
@@ -53,9 +69,10 @@ export default function ResearchPage() {
       ],
       venue: "Accepted: World Sleep 2025, Singapore",
       year: "2025",
-      tags: ["Human-computer interaction", "Digital Health", "Gaming Disorder"],
+      // tags: ["Human-computer interaction", "Digital Health", "Gaming Disorder"],
       poster: "posters/world-sleep.png",
       posterType: "png",
+      photo: "posters/world-sleep.png",
     },
     {
       title: 'Does Spending "Too Much Time Online" Predict Sleep Health and Mental Health?',
@@ -69,9 +86,10 @@ export default function ResearchPage() {
       ],
       venue: "Accepted: Association of Professional Sleep Societies. Seattle, Washington, USA",
       year: "2025",
-      tags: ["Human-computer interaction", "Digital Health", "Mental Health", "Digital Media Usage"],
+      // tags: ["Human-computer interaction", "Digital Health", "Mental Health", "Digital Media Usage"],
       poster: "posters/sleep2025.svg",
       posterType: "svg",
+      photo: "posters/sleep2025.svg",
     },
     {
       title: "International Public Opinion on Digital Media Use for Youth and Schools",
@@ -85,9 +103,36 @@ export default function ResearchPage() {
       ],
       venue: "Accepted: Digital Media and Developing Minds International Scientific Congress, Washington DC",
       year: "2025",
-      tags: ["Human-computer interaction", "AI as Tutor", "Digital Media usage in schools", "Public Opinion"],
+      // tags: ["Human-computer interaction", "AI as Tutor", "Digital Media usage in schools", "Public Opinion"],
       poster: "posters/CS2025Poster_Hale.svg",
       posterType: "svg",
+      photo: "posters/CS2025Poster_Hale.svg",
+    },
+    {
+      title: "Evaluating the inclusivity and accessibility of educational apps (games) on the Google Play Store.",
+      authors: "Nusrat Jahan Lia; Nahida Sultana; Sabrina Shajin Alam, PhD; Mamunar Rashid, PhD; Aymaan Islam",
+      affiliations: [
+        "University of Dhaka",
+        "Western University, CA",
+        "ITHRA, King Abdulaziz Center for World Culture, Dammam"
+      ],
+      venue: "Reviewed; In Progress: American Educational Research Association (AERA)",
+      year: "2026",
+      // tags: ["SIG-Inclusion and Accessibility in Educational Assessment", "Computers and Learning, Evaluation, Diversity", "Human-computer interaction"],
+     
+    },
+    {
+      title: "A Comprehensive Evaluation of the Educational Apps in the Google Play Store: An Exploratory Study",
+      authors: "Nahida Sultana; Sabrina Shajin Alam, PhD; Nusrat Jahan Lia;  Mamunar Rashid, PhD; Aymaan Islam",
+      affiliations: [
+        "University of Dhaka",
+        "Western University, CA",
+        "ITHRA, King Abdulaziz Center for World Culture, Dammam"
+      ],
+      venue: "Reviewed; In Progress: American Educational Research Association (AERA)",
+      year: "2026",
+      // tags: ["Computers and Learning, Evaluation, Diversity", "Human-computer interaction"],
+     
     },
   ]
 
@@ -119,8 +164,17 @@ export default function ResearchPage() {
             {publications.map((pub, index) => (
               <Card key={index} className="hover:shadow-md transition-shadow">
                 <CardContent className="p-6">
-                  <div className="flex flex-col sm:flex-row justify-between items-start gap-4">
-                    <div className="flex-1 space-y-3">
+                  <div className="flex flex-col sm:flex-row justify-between items-start gap-6 sm:gap-8">
+                    {pub.photo && (
+                      <div className="flex-shrink-0 w-full sm:w-48 md:w-56 mb-4 sm:mb-0">
+                        <img
+                          src={pub.photo}
+                          alt={pub.title}
+                          className="w-full h-auto max-w-full sm:max-w-none sm:h-48 md:h-56 object-contain rounded-lg"
+                        />
+                      </div>
+                    )}
+                    <div className="flex-1 space-y-3 min-w-0">
                       <h3 className="font-semibold text-lg hover:text-primary cursor-pointer">{pub.title}</h3>
 
                       <div className="text-sm text-muted-foreground">{formatAuthors(pub.authors)}</div>
@@ -143,13 +197,15 @@ export default function ResearchPage() {
                         <span className="text-muted-foreground">{pub.year}</span>
                       </div>
 
-                      <div className="flex flex-wrap gap-1">
-                        {pub.tags.map((tag) => (
-                          <Badge key={tag} variant="outline" className="text-xs">
-                            {tag}
-                          </Badge>
-                        ))}
-                      </div>
+                      {pub.tags && pub.tags.length > 0 && (
+                        <div className="flex flex-wrap gap-1">
+                          {pub.tags.map((tag) => (
+                            <Badge key={tag} variant="outline" className="text-xs">
+                              {tag}
+                            </Badge>
+                          ))}
+                        </div>
+                      )}
                     </div>
 
                     <div className="flex gap-2">
@@ -158,7 +214,7 @@ export default function ResearchPage() {
                           size="sm"
                           variant="outline"
                           onClick={() =>
-                            pub.posterType === "svg" ? setSelectedPoster(pub.poster) : window.open(pub.poster, "_blank")
+                            pub.posterType === "svg" ? setSelectedPoster(pub.poster || null) : window.open(pub.poster, "_blank")
                           }
                         >
                           <FileText className="w-3 h-3 mr-1" />
