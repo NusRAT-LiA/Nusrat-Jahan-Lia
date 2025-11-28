@@ -68,7 +68,7 @@ export default function HomePage() {
               </p>
 
               <p className="mb-6">
-                Entrepreneurially, I am a <strong>founding engineer</strong> of Perspectivity - Drishtikon, the first real-time AI news aggregator for Bangla, featuring multi-axis bias detection, news summarization, and interactive bots that empower citizens with nuanced, research-backed insights.
+                Entrepreneurially, I am a <strong>founding researcher</strong> of Perspectivity - Drishtikon, the first real-time AI news aggregator for Bangla, featuring multi-axis bias detection, news summarization, and interactive bots that empower citizens with nuanced, research-backed insights.
               </p>
               <p className="mb-6">
                 And... I paint. Some like to call me an artist but I am just someone who expresses this way.
