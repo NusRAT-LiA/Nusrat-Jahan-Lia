@@ -51,7 +51,7 @@ export default function HomePage() {
 
             <div className="text-sm text-muted-foreground leading-relaxed max-w-2xl">
               <p className="mb-6">
-                I am a researcher and AI engineer working in <strong> natural language processing, human-centered applications and secured decentralized systems, with experience in large-scale software and LLM development</strong>
+                My work lies in <strong> natural language processing, human-centered applications and secured decentralized systems, with experience in large-scale software and LLM development</strong>
               </p>
 
               <p className="mb-6">
