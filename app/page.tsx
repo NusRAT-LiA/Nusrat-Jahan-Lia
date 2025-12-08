@@ -60,16 +60,15 @@ export default function HomePage() {
 
              
               <p className="mb-6">
-                I am currently a final year software engineering undergraduate student at University of Dhaka where I work in BARTA Lab. There, I focus on <strong>low-resource and small-language-model development, design datasets, techniques, and educational resources .</strong> I also serve as an <strong>instructor</strong> at BARTA, where <strong>I teach language model building course.</strong> At <strong>BanglaLLM</strong>, I work with amazing researchers and developers building open-source language models for low-resource Bangla language. This year, I am also serving as an Instructor for <strong>International AI Olympiad</strong>, teaching <strong>AI Recommender Systems</strong>.
-              </p>
-
-              <p className="mb-6">
-                As a Contractual LLM Engineer at Global MicroLearning Solutions, I am designing and deploying <strong> large-scale LLM solutions </strong> that support engineering teams in the field with intelligent, context-aware systems.
+                I am currently a final-year software engineering undergraduate student at University of Dhaka where I work in BARTA Lab. There, I focus on <strong>low-resource and small-language-model development, design datasets, techniques, and educational resources .</strong> I also serve as an <strong>instructor</strong> at BARTA, where <strong>I teach a language model building course.</strong> At <strong>BanglaLLM</strong>, I work with amazing researchers and developers building open-source language models for low-resource Bangla language. This year, I am also serving as an Instructor for <strong>International AI Olympiad</strong>, teaching <strong>AI Recommender Systems</strong>.
               </p>
 
               <p className="mb-6">
                 Entrepreneurially, I am a <strong>founding researcher</strong> of Perspectivity - Drishtikon, the first real-time AI news aggregator for Bangla, featuring multi-axis bias detection, news summarization, and interactive bots that empower citizens with nuanced, research-backed insights.
               </p>
+              {/* <p className="mb-6">
+                As a Contractual AI Engineer at Global MicroLearning Solutions, I designed and deployed <strong> large-scale LLM solutions </strong> that support engineering teams in the field with intelligent, context-aware systems.
+              </p> */}
               <p className="mb-6">
                 And... I paint. Some like to call me an artist but I am just someone who expresses this way.
               </p>

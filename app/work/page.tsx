@@ -27,12 +27,12 @@ export default function WorkPage() {
         "Led projects and worked in collaboration with WHO, Stony Brook Medicine, McGill University, University of Geneva, University of Tokyo and other institutions (from around 35 countries)",
         "Engineered Knowledge Graphs integrating worldwide data on Digital Health and Technology Usage to enable semantic analysis and cross-country insights.",
         "Developed coding schemes and agentic LLMs to evaluate educational games on the Google Play Store.",
-        "Co-authored 6 researches on digital well-being, education and technology usage.",
+        "Co-authored 6 research papers on digital well-being, education and technology usage.",
       ],
        achievements: [
         "Accepted and Presented - \"Does Spending “Too Much Time Online” Predict Sleep Health and Mental Health?\"  at - 39th Annual Meeting of the Associated Professional Sleep Societies (APSS)",
         "Accepted and Presented - \"International Public Opinion on Digital Media Use for Youth and Schools\" at -  2025 Digital Media and Developing Minds International Scientific Congress",
-        "Accepted and Presented - \"Does a gaming disorder severity predict worse sleep quality?\" at - World Sleep 2025, Singapore",
+        "Accepted and Presented - \"Does gaming disorder severity predict worse sleep quality?\" at - World Sleep 2025, Singapore",
         "Accepted - \"Adult Attitudes about School Smartphone Bans: A Global Survey of 35 Countries\" at - The Journal of American Medical Association (JAMA)",
         "In Progress - \"Evaluating the Inclusivity and Accessibility of Educational Apps on the Google Play Store\" for - American Educational Research Association (AERA) Annual Meeting",
         "In Progress - \"A Comprehensive Evaluation of the Educational Apps in the Google Play Store: An Exploratory Study\" for - American Educational Research Association (AERA) Annual Meeting",
@@ -53,21 +53,7 @@ export default function WorkPage() {
       achievements: [
       ],
     },
-    {
-      id: "gbl",
-      title: "Contractual LLM Engineer",
-      organization: "Global MicroLearning Solutions",
-      logo: "work/gbl.png?height=80&width=80",
-      startDate: "2025-08",
-      endDate: null,
-      type: "Industrial",
-      description: [
-        "Building large scale LLM and AI solutions for field support and engineering solutions"
-      ],
-      link: "https://globalmicrolearning.com/",
-      achievements: [
-      ],
-    },
+    
     {
       id: "icitap",
       title: "WPA Software Engineer Intern",
@@ -119,7 +105,7 @@ export default function WorkPage() {
       description: [
         "The first News Aggregation AI agent for Bangla news with the plan of future expansion to other low-resource languages",
         "Has research-backed multi-axis bias-analysis to empower citizens to make informed decisions",
-        "Built in news-summarizer agent and interactivechatbot to know about news in detail",
+        "Built-in news-summarizer agent and interactive chatbot to know about news in detail",
         "Shows local and international news trends in real-time"
 
       ],
@@ -129,7 +115,7 @@ export default function WorkPage() {
       ],
     },
     {
-      id: "banglallM",
+      id: "banglallm",
       title: "Member",
       organization: "BanglaLLM",
       logo: "work/banglallm.jpeg?height=80&width=80",
@@ -144,6 +130,21 @@ export default function WorkPage() {
 
       achievements: [
        
+      ],
+    },
+    {
+      id: "gbl",
+      title: "Contractual LLM/AI Engineer",
+      organization: "Global MicroLearning Solutions",
+      logo: "work/gbl.png?height=80&width=80",
+      startDate: "2025-08",
+      endDate: "2025-10",
+      type: "Industrial",
+      description: [
+        "I designed and deployed large-scale AI Agents for field support and turbine-engineering solutions"
+      ],
+      link: "https://globalmicrolearning.com/",
+      achievements: [
       ],
     },
     // {

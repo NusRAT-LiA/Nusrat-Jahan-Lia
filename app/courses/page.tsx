@@ -186,34 +186,47 @@ function CourseCard({
   const hasSyllabus = course.syllabus
 
   return (
-    <Card className="overflow-hidden">
-      <div className={`grid gap-0 ${hasImage ? "md:grid-cols-4" : "md:grid-cols-1"}`}>
+    <Card className="overflow-hidden text-[11px] md:text-xs">
+      <div className={`grid gap-0 ${hasImage ? "md:grid-cols-6" : "md:grid-cols-1"}`}>
         {/* Course Thumbnail - Only render if image exists */}
         {hasImage && (
-          <div className="aspect-video md:aspect-auto relative bg-muted">
+          <div className="relative bg-muted aspect-[5/3] md:aspect-auto md:col-span-2 md:h-full">
             <Image src={course.thumbnail || "/placeholder.svg"} alt={course.title} fill className="object-cover" />
           </div>
         )}
 
         {/* Course Info */}
-        <div className={`p-6 ${hasImage ? "md:col-span-3" : "md:col-span-1"}`}>
+        <div className={`p-2 md:p-2.5 ${hasImage ? "md:col-span-4" : "md:col-span-1"}`}>
           {/* Header Section */}
-          <div className="flex justify-between items-start mb-4">
-            <div className="space-y-2 flex-1">
+          <div className="flex justify-between items-start mb-1">
+            <div className="space-y-0.5 flex-1">
               {/* Badges - Only render if data exists */}
-              <div className="flex items-center gap-2 flex-wrap">
-                {course.discipline && <Badge variant="secondary">{course.discipline}</Badge>}
-                {course.level && <Badge variant="outline">{course.level}</Badge>}
+              <div className="flex items-center gap-1 flex-wrap">
+                {course.discipline && (
+                  <Badge variant="secondary" className="text-[11px] px-1.5 py-0.5">
+                    {course.discipline}
+                  </Badge>
+                )}
+                {course.level && (
+                  <Badge variant="outline" className="text-[11px] px-1.5 py-0.5">
+                    {course.level}
+                  </Badge>
+                )}
                 {course.status && (
-                  <Badge variant={course.status === "Active" ? "default" : "secondary"}>{course.status}</Badge>
+                  <Badge
+                    variant={course.status === "Active" ? "default" : "secondary"}
+                    className="text-[11px] px-1.5 py-0.5"
+                  >
+                    {course.status}
+                  </Badge>
                 )}
               </div>
 
               {/* Title and Code */}
-              <h3 className="text-2xl font-bold">{course.title}</h3>
+              <h3 className="text-[13px] md:text-sm font-semibold leading-snug">{course.title}</h3>
 
               {/* Course metadata - Only render if data exists */}
-              <div className="flex flex-wrap items-center gap-4 text-sm text-muted-foreground">
+              <div className="flex flex-wrap items-center gap-2 text-[10px] md:text-[11px] text-muted-foreground">
                 {course.code && <span>{course.code}</span>}
                 {course.term && <span>{course.term}</span>}
                 {hasLocation && (
@@ -232,7 +245,7 @@ function CourseCard({
             </div>
 
             {/* Right side metadata */}
-            <div className="text-right text-sm text-muted-foreground space-y-2">
+            <div className="text-right text-[10px] md:text-[11px] text-muted-foreground space-y-0.5">
               {hasEnrollment && (
                 <div className="flex items-center gap-1 justify-end">
                   <Users className="w-4 h-4" />
@@ -243,11 +256,11 @@ function CourseCard({
           </div>
 
           {/* Description - Only render if exists */}
-          {hasDescription && <p className="text-muted-foreground mb-4">{course.description}</p>}
+          {hasDescription && <p className="text-muted-foreground mb-1 leading-snug text-[10px] md:text-[11px]">{course.description}</p>}
 
           {/* Action Buttons - Only render if syllabus exists */}
           {hasSyllabus && (
-            <div className="flex gap-4 mb-4">
+            <div className="flex gap-2 mb-1.5">
               <SyllabusDialog course={course} />
             </div>
           )}
@@ -261,7 +274,7 @@ function CourseCard({
                   {isExpanded ? <ChevronDown className="w-4 h-4" /> : <ChevronRight className="w-4 h-4" />}
                 </Button> */}
               </CollapsibleTrigger>
-              <CollapsibleContent className="space-y-4 mt-4">
+              <CollapsibleContent className="grid gap-2 sm:gap-2.5 sm:grid-cols-2 mt-2.5">
                 {course.modules.map((module: any) => (
                   <ModuleCard key={module.module} module={module} courseId={course.id} />
                 ))}
@@ -292,21 +305,21 @@ function ModuleCard({ module, courseId }: { module: any; courseId: string }) {
   const hasSlides = module.slides
 
   return (
-    <Card className="p-4">
-      <div className="space-y-3">
+    <Card className="p-2 md:p-2.5 h-full text-[10px] md:text-[11px]">
+      <div className="space-y-1.5">
         <div className="flex justify-between items-start">
           <div>
             <h4 className="font-semibold">
               Module {module.module}: {module.title}
             </h4>
-            {hasTopics && <p className="text-sm text-muted-foreground">{module.topics.join(" • ")}</p>}
+            {hasTopics && <p className="text-[11px] md:text-xs text-muted-foreground">{module.topics.join(" • ")}</p>}
           </div>
         </div>
 
         {hasSlides && (
-          <div className="space-y-2">
-            <h5 className="text-sm font-medium">Module Slides:</h5>
-            <div className="flex items-center gap-2 text-sm">
+          <div className="space-y-1">
+            <h5 className="text-[10px] md:text-xs font-medium">Module Slides:</h5>
+            <div className="flex items-center gap-1.5 text-[10px] md:text-xs">
               <FileText className="w-4 h-4" />
               <span className="flex-1">{module.slides.title}</span>
               <FullScreenPDFDialog module={module} courseId={courseId} />
@@ -345,7 +358,7 @@ export default function CoursesPage() {
       title: "Building Small Language Model: From Foundations to Bangla Financial Text Generation",
       thumbnail: "projects/slm.png",
       description:
-        "Learn the core principles and techniques of language models while building a small Bangla language model that generates financial articles. The course is taken offline at the Institute of Information Technology, University of Dhaka.",
+        "Learn the core principles and techniques of language models while building a small Bangla language model that generates financial articles. I teach this course offline at the Institute of Information Technology, University of Dhaka. Below are some of the modules covered in the course. To enroll in the most updated course classes, contact BARTA Lab (barta-research-lab.github.io).",
       syllabus: {
         overview:
           "This course provides hands-on experience in building small language models specifically for Bangla financial text generation. Students will learn the fundamentals of natural language processing, transformer architectures, and domain-specific model training.",
@@ -450,7 +463,7 @@ export default function CoursesPage() {
         <div className="text-center space-y-4 mb-16">
           <h1 className="text-4xl md:text-5xl font-bold tracking-tight">Courses & Teaching</h1>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Educational courses I designed, developed and serving as an instructor.
+            Educational courses I designed, developed, and serving as an instructor.
           </p>
         </div>
 

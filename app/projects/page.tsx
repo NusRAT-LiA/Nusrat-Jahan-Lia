@@ -106,7 +106,7 @@ const projects: Project[] = [
     fullDescription:
       "PorTech leverages zkSync Layer 2 and the Request Network for secure, scalable payment and document automation on-chain. Smart contracts manage workflows like project creation, invoice authorization, and stakeholder role assignment, while private IPFS ensures efficient, compliant data storage. Decentralized identity is handled via zkLogin and passkeys, ensuring privacy-preserving authentication tied to blockchain keypairs. Integration is enabled through modular APIs and subgraphs via The Graph, making the system robust, composable, and enterprise-ready.",
     motivation:
-      "Did you know that shipment document related delays cost the global economy $3 Billion annually? Despite such advances in documentation automation, port-document flow is still plagued by inefficiencies, delays, and manual errors. Me, along with my team, decided to find a feasible solution to this problem. And that's when PorTech was born. I felt we have done justice to the idea when this project became the Gold-Winner of Blockchain Olympiad 2025.",
+      "Did you know that shipment document-related delays cost the global economy $3 Billion annually? Despite such advances in documentation automation, port-document flow is still plagued by inefficiencies, delays, and manual errors. I, along with my team, decided to find a feasible solution to this problem. And that's when PorTech was born. I felt we had done justice to the idea when this project became the Gold-Winner of Blockchain Olympiad 2025.",
     technologies: ["Zero-Knowledge Proof", "IPFS", "Solidity", "Ethereum"],
     categories: ["Blockchain"],
     image: "projects/PorTech.png?height=400&width=600",
@@ -129,7 +129,7 @@ const projects: Project[] = [
     fullDescription:
       "A modular, permissioned tax compliance system built on Hyperledger Fabric with Raft consensus, decomposed into microservices for user management, smart contracts, and identity. It integrates Hyperledger Indy for verifiable credentials and Firefly for secure API workflows and off-chain IPFS data handling. Zero-Knowledge Proofs (ZKPs) ensure private validation of financial compliance without disclosing sensitive data.",
     motivation:
-      "The amount of tax fraud in Bangladesh is one of the highests in the world. And globally, 65% tax evasion is done by corporate companies. Hence, I decided to build a solution that could help the government collect taxes more efficiently and accurately without compromising company privacy. This project was a finalist for International Blockchain Olympiad 2023. I built the technical architecture and led the team, having two other talented team-mates who made this challenging project successful.",
+      "The amount of tax fraud in Bangladesh is one of the highest in the world. And globally, 65% tax evasion is done by corporate companies. Hence, I decided to build a solution that could help the government collect taxes more efficiently and accurately without compromising company privacy. This project was a finalist for International Blockchain Olympiad 2023. I built the technical architecture and led the team, having two other talented team-mates who made this challenging project successful.",
     technologies: ["Hyperledger Fabric","Zero-Knowledge Proof", "Hyperledger Indy", "Hyperledger FireFly", "Solidity", "Ethereum"],
     categories: ["Blockchain"],
     image: "projects/DefTax.png?height=400&width=600",
@@ -146,7 +146,7 @@ const projects: Project[] = [
     id: "StackOverflow-Lite",
     title: "StackOverflow-Lite: A Microservices-based StackOverflow Clone",
     description:
-      "A full stack implementation of StackOverflow, decompose to microservices, containerized and orchestrated",
+      "A full-stack implementation of StackOverflow, decomposed into microservices, containerized and orchestrated",
     fullDescription:
       "The initial implementation featured a FastAPI monolith with core modules for user management (signup/signin), post CRUD (including code snippet uploads to MinIO), and real-time-style notifications. The monolith was decomposed into three autonomous services: User Service: Authentication, token issuance, secure password handling. Post Service: Auth-validated post creation/retrieval with MinIO integration. Notification Service: Post-based notifications and scheduled cleanup via background workers. Each service was Dockerized, exposing independent APIs, and orchestrated with Docker Compose. An Nginx reverse proxy was configured to route traffic to respective containers, enforcing modular request handling. Inter-service communication was secured and validated with token-based authentication. The notification cleaner runs as a persistent background job to delete stale records.",
     motivation:
@@ -167,7 +167,7 @@ const projects: Project[] = [
     title: "MEG: Mars Exploration Game",
     description: "An immersive 3D game that simulates Mars exploration with realistic physics and educational content along with real-time weather updated, predicted using ML models.",
     fullDescription:
-      "The game features realistic terrain generated based on the actual martian terrain photos collected by rovers, physics-based mechanics, and ML predicted environmental conditions using data from Curiosity Rover. Players can conduct virtual experiments, collect samples, and learn about Mars geology and atmosphere all while fighting against challenges of martian weather to survive",
+      "The game features realistic terrain generated based on the actual Martian terrain photos collected by rovers, physics-based mechanics, and ML predicted environmental conditions using data from Curiosity Rover. Players can conduct virtual experiments, collect samples, and learn about Mars geology and atmosphere all while fighting against challenges of Martian weather to survive",
     motivation:
       "The motivation came from the Bangladeshi NASA SPACE APP CHALLENGE GLOBAL WINNER, a group of Bangladeshi kids competing and winning against professionals. They were very curious about Mars but had no idea about where to begin. They just represented the regular Bangladesh school students who lack access to interactive space education resources. This game was intended to be a stepping stone for real-time simulated space education for these students. I did not have the funds to get a VR set. But I kept the design VR compatible so that the same codebase can be migrated to build a VR game.",
     technologies: ["Unity", "C#","Python","3D Modeling", "Physics Simulation"],
@@ -728,10 +728,10 @@ function ProjectDetails({ project }: { project: Project }) {
             <p className="text-muted-foreground text-xs">{project.fullDescription}</p>
           </div>
 
-          <div>
+          {/* <div>
             <h3 className="font-semibold mb-2">Motivation</h3>
             <p className="text-muted-foreground text-xs">{project.motivation}</p>
-          </div>
+          </div> */}
         </div>
 
         <div className="space-y-4">

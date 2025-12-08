@@ -174,7 +174,7 @@ export default function LifePage() {
     },
     {
       id: "8",
-      title: "Featured by US Embassy: For contribution in US department of Justice's Tech-in-conservation Initiative",
+      title: "Featured by US Embassy: For contributions in US Department of Justice's Tech-in-conservation Initiative",
       date: "2024-10-16",
       image: "events/usembassy.png",
       description:
@@ -198,7 +198,7 @@ export default function LifePage() {
       date: "2024-04-27",
       image: "events/game-jam.png",
       description:
-        "This was my first ever attempt in developing a game. This game was made based on a gameJam theme — 'It's hard to cook without deadly spells'.",
+        "This was my first-ever attempt in developing a game. This game was made based on a gameJam theme — 'It's hard to cook without deadly spells'.",
       link: "https://www.youtube.com/watch?v=skUOGGozj-A&t=1s",
       category: "Competition",
     },
@@ -219,18 +219,18 @@ export default function LifePage() {
       date: "2023-11-07",
       image: "events/itverse.jpeg",
       description:
-        "Organized and Hosted ITverse-2023 with almost two thousand national as well as international participants and 11 sponsors.",
+        "Organized and Hosted ITverse-2023 with almost three thousand national as well as international participants and 11 sponsors.",
       link: "https://www.linkedin.com/posts/nusrat-jahan-lia-608655229_working-with-iit-software-engineers-community-activity-7127694508229632000-Gw2Y?utm_source=share&utm_medium=member_desktop&rcm=ACoAADk6EigBqZl5OtppMAq0VC1wsrCIlCpVRPY",
       category: "Event Organization",
     },
     {
       id: "3",
       title:
-        "Organized and Hosted FlutterFrenzy: The first developers' conference in Bangladesh sponsored by Google and Flutter",
+        "Organized and Hosted FlutterFrenzy: The first developers conference in Bangladesh sponsored by Google and Flutter",
       date: "2023-05-20",
       image: "events/flutter.jpeg",
       description:
-        "Organized, led and Hosted FlutterFrenzy, the first ever Flutter based event in Bangladesh, sponsored by Google and Flutter.",
+        "Organized, led, and Hosted FlutterFrenzy, the first-ever Flutter-based event in Bangladesh, sponsored by Google and Flutter.",
       link: "https://x.com/FlutterFrenzy",
       category: "Event Organization",
     },
