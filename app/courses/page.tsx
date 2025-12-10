@@ -462,9 +462,9 @@ export default function CoursesPage() {
         {/* Header */}
         <div className="text-center space-y-4 mb-16">
           <h1 className="text-4xl md:text-5xl font-bold tracking-tight">Courses & Teaching</h1>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          {/* <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Educational courses I designed, developed, and serving as an instructor.
-          </p>
+          </p> */}
         </div>
 
         {/* Courses Grid */}
