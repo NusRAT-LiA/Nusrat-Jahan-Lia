@@ -275,8 +275,8 @@ export default function LifePage() {
         {/* Header */}
         <div className="text-center space-y-4 mb-16">
           <h1 className="text-4xl md:text-5xl font-bold tracking-tight">Life Events</h1>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-          A limited subset of spatiotemporal phenomena was logged and archived.
+          <p className="text-sm text-muted-foreground max-w-2xl mx-auto">
+          A limited subset of spatiotemporal phenomena.
           </p>
         </div>
 

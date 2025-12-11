@@ -97,7 +97,7 @@ export default function BlogPage() {
         {/* Header */}
         <div className="text-center space-y-4 mb-16">
           <h1 className="text-4xl md:text-5xl font-bold tracking-tight">Blogs</h1>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-sm text-muted-foreground max-w-2xl mx-auto">
             Just my random thoughts, opinions, curiosities, and questions. My blogs are pretty conversational... I write just how I would speak. It's a Rubber-ducking session to me.
           </p>
         </div>

@@ -12,19 +12,13 @@ import Projects from "./projects/page"
 import Life from "./life/page"
 
 export default function HomePage() {
-  const newsItems = [
-    { date: "2024-12-15", title: "Paper accepted at CHI 2025: 'Human-AI Collaboration in Educational Settings'" },
-    { date: "2024-11-28", title: "Keynote speaker at EdTech Innovation Summit 2024" },
-    { date: "2024-11-10", title: "Featured in TechCrunch: 'The Future of AI in Education'" },
-    { date: "2024-10-22", title: "Received NSF Grant for $500K to study AI ethics in classroom environments" },
-  ]
-
+  
   return (
     <div className="min-h-screen bg-background">
       {/* Hero Section */}
 
       <section className="container mx-auto px-4 py-16 md:py-24">
-        <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 items-center">
+       <div className="grid gap-12 lg:grid-cols-[1fr_2fr] lg:gap-16 items-center">
           
           {/* Image first on large screens */}
           <div className="relative order-1 lg:order-1">
@@ -36,9 +30,9 @@ export default function HomePage() {
                 className="object-cover"
               />
             </div>
-              <p className="text-sm italic text-muted-foreground mt-2 text-center">
-              I picked this photo since it has Schrödinger’s dataset vibes: simultaneously well-lit and shadowed entries.
-              </p>
+              {/* <p className="text-sm italic text-gray-300 mt-2 text-center">
+              I picked this photo since it's like Schrödinger’s dataset: simultaneously well-lit and shadowed entries.
+              </p> */}
           </div>
 
           {/* Text second on large screens */}
@@ -49,7 +43,7 @@ export default function HomePage() {
               </h1>
             </div>
 
-            <div className="text-sm text-muted-foreground leading-relaxed max-w-2xl">
+            <div className="text-sm text-muted-foreground leading-relaxed">
               <p className="mb-6">
                 My work lies in <strong> natural language processing, human-centered applications and secured decentralized systems, with experience in large-scale software and LLM development</strong>
               </p>
@@ -161,9 +155,9 @@ export default function HomePage() {
       <section>
         <Work/>
       </section>
-      <section>
+      {/* <section>
         <Projects/>
-      </section>
+      </section> */}
       <section>
         <Blog />
       </section>
