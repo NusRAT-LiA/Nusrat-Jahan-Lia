@@ -158,7 +158,7 @@ export default function LifePage() {
       title:
         "Employment award by US Department of Justice: For technological innovations in the field of conservation and investigation",
       date: "2025-05-22",
-      image: "events/usdj.JPEG",
+      image: "events/usdj.jpeg",
       description:
         "Recognition for  contributions to technological innovations in conservation and investigation fields.",
       link: "https://www.linkedin.com/posts/nusrat-jahan-lia-608655229_what-an-amazing-journey-with-icitapus-activity-7331540643850207232-2vbM?utm_source=share&utm_medium=member_desktop&rcm=ACoAADk6EigBqZl5OtppMAq0VC1wsrCIlCpVRPY",
