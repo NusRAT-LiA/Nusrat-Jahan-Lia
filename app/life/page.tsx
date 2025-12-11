@@ -147,7 +147,7 @@ export default function LifePage() {
       title:
         "Teaching foundational Bangla Natural Language Processing as an Instructor of Barta at Institute of Information Technology, University of Dhaka",
       date: "2025-11-13",
-      image: "events/slm-1.jpeg",
+      image: "events/class.png",
       description:
         "",
       link: "https://barta-research-lab.github.io/",
