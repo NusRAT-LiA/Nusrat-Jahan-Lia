@@ -24,7 +24,7 @@ export default function HomePage() {
           <div className="relative order-1 lg:order-1">
             <div className="aspect-square relative overflow-hidden rounded-2xl">
               <Image
-                src="me/me.png?height=500&width=500"
+                src="me/me2.png?height=500&width=500"
                 alt="Nusrat Lia"
                 fill
                 className="object-cover"
