@@ -53,7 +53,7 @@ export default function ResearchPage() {
       year: "2025",
       // type: "Journal",
       // tags: ["Digital Technology Usage", "Human-computer interaction"],
-      // link: "https://www.aera.net/",
+      link: "https://jamanetwork.com/journals/jamapediatrics/fullarticle/2843672",
       photo: "research/jama.png",
     },
     {
