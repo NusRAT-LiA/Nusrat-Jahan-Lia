@@ -49,7 +49,7 @@ export default function ResearchPage() {
       title: "Adult Attitudes about School Smartphone Bans: A Global Survey of 35 Countries",
       authors: "Dimitri A. Christakis, MD, MPH; Nusrat Jahan Lia; Lauren Hale, PhD; Md Mamunur Rashid",
       affiliations: ["Renaissance School of Medicine, Stony Brook University", "Seattle Children's Research Institute, Seattle Children's Hospital", "University of Dhaka", "ITHRA, King Abdulaziz Center for World Culture, Dammam"],
-      venue: "Accepted, in press: The Journal of American Medical Association",
+      venue: "Accepted, Published: The Journal of American Medical Association; doi: 10.1001/jamapediatrics.2025.5736",
       year: "2025",
       // type: "Journal",
       // tags: ["Digital Technology Usage", "Human-computer interaction"],
