@@ -81,8 +81,13 @@ export default function HomePage() {
               <Link href="https://github.com/NusRAT-LiA" className="text-muted-foreground hover:text-foreground transition-colors">
                 <Github className="w-5 h-5" />
               </Link>
+
               <Link href="https://www.linkedin.com/in/nusrat-jahan-lia-608655229/" className="text-muted-foreground hover:text-foreground transition-colors">
                 <Linkedin className="w-5 h-5" />
+              </Link>
+              
+              <Link href="https://scholar.google.com/citations?user=c2tTr4UAAAAJ&hl=en" className="text-muted-foreground hover:text-foreground">
+                <BookOpen className="h-4 w-4" />
               </Link>
             </div>
           </div>
