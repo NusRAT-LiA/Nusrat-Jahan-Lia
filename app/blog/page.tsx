@@ -22,6 +22,15 @@ export default function BlogPage() {
 
   const blogPosts = [
     {
+      title: "Thinking aloud Federated Code Intelligence: Privacy, Retrieval, and Knowledge Asymmetry",
+      excerpt:
+        "I didn't just want to rely on some LLM-generated response or forum question answers. I kept wondering where I could learn from actual, recent, battle-tested approaches used by companies currently operating these systems at scale.",
+      image: "blog/blog7.png?height=200&width=300",
+      date: "2026-01-11",
+      readTime: "4 min read",
+      link: "https://medium.com/@nusratlia/thinking-aloud-federated-code-intelligence-privacy-retrieval-and-knowledge-asymmetry-0bf4e0081d8f?postPublishedType=initial",
+    },
+    {
       title: "The Art of Knowing When to Stop: Early Stopping in AI and Life",
       excerpt:
         "Consider stopping soon. How many times have we all needed that exact warning in our lives?",

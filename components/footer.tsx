@@ -24,9 +24,9 @@ export function Footer() {
               <Link href="https://x.com/NusratLia" className="text-muted-foreground hover:text-foreground">
                 <Twitter className="h-4 w-4" />
               </Link>
-              {/* <Link href="https://scholar.google.com" className="text-muted-foreground hover:text-foreground">
+              <Link href="https://scholar.google.com/citations?user=c2tTr4UAAAAJ&hl=en" className="text-muted-foreground hover:text-foreground">
                 <BookOpen className="h-4 w-4" />
-              </Link> */}
+              </Link>
               <Link href="mailto:bsse1306@iit.du.ac.bd" className="text-muted-foreground hover:text-foreground">
                 <Mail className="h-4 w-4" />
               </Link>
