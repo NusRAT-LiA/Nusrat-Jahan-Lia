@@ -43,7 +43,16 @@ export default function ResearchPage() {
       link: "https://arxiv.org/abs/2510.09032",
       photo: "research/chakma.png",
     },
-    
+    {
+      title: "Auditing Reciprocal Sentiment Alignment: Inversion Risk, Dialect Representation and Intent Misalignment in Transformers",
+      authors: "Nusrat Jahan Lia; Shubhashis Roy Dipta",
+      affiliations: ["University of Dhaka", "University of Maryland"],
+      venue: "Submitted: BiAlign 2026 CHI workshop",
+      year: "2026",
+      // type: "Conference",
+      // tags: ["MLM", "Large Language Model", "Tokenization"],
+      photo: "research/bialign.png",
+    },
 
     {
       title: "Adult Attitudes about School Smartphone Bans: A Global Survey of 35 Countries",
