@@ -51,6 +51,7 @@ export default function ResearchPage() {
       year: "2026",
       // type: "Conference",
       // tags: ["MLM", "Large Language Model", "Tokenization"],
+      link: "https://arxiv.org/abs/2602.17469",
       photo: "research/bialign.png",
     },
 
