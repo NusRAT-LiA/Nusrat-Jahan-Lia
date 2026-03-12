@@ -47,7 +47,7 @@ export default function ResearchPage() {
       title: "Auditing Reciprocal Sentiment Alignment: Inversion Risk, Dialect Representation and Intent Misalignment in Transformers",
       authors: "Nusrat Jahan Lia; Shubhashis Roy Dipta",
       affiliations: ["University of Dhaka", "University of Maryland"],
-      venue: "Submitted: BiAlign 2026 CHI workshop",
+      venue: " ",
       year: "2026",
       // type: "Conference",
       // tags: ["MLM", "Large Language Model", "Tokenization"],
