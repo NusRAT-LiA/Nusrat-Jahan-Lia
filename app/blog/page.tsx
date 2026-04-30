@@ -103,7 +103,6 @@ export default function BlogPage() {
   return (
     <div className="min-h-screen bg-background">
       <div className="container mx-auto px-4 py-16">
-        {/* Header */}
         <div className="text-center space-y-4 mb-16">
           <h1 className="text-4xl md:text-5xl font-bold tracking-tight">Blogs</h1>
           <p className="text-sm text-muted-foreground max-w-2xl mx-auto">
@@ -111,94 +110,14 @@ export default function BlogPage() {
           </p>
         </div>
 
-        {/* Featured Post
-        <section className="mb-16">
-          <Card className="overflow-hidden hover:shadow-lg transition-shadow">
-            <div className="grid md:grid-cols-2 gap-0">
-              <div className="aspect-video md:aspect-auto relative bg-muted">
-                <Image
-                  src={featuredPost.image || "/placeholder.svg"}
-                  alt={featuredPost.title}
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <div className="p-8 flex flex-col justify-center">
-                <div className="space-y-4">
-                  <div className="flex items-center gap-2">
-                    <Badge>{featuredPost.category}</Badge>
-                    <span className="text-sm text-muted-foreground">Featured</span>
-                  </div>
-                  <h2 className="text-2xl md:text-3xl font-bold leading-tight">{featuredPost.title}</h2>
-                  <p className="text-muted-foreground">{featuredPost.excerpt}</p>
-                  <div className="flex items-center gap-4 text-sm text-muted-foreground">
-                    <div className="flex items-center gap-1">
-                      <Calendar className="w-4 h-4" />
-                      {new Date(featuredPost.date).toLocaleDateString("en-US", {
-                        month: "long",
-                        day: "numeric",
-                        year: "numeric",
-                      })}
-                    </div>
-                    <div className="flex items-center gap-1">
-                      <Clock className="w-4 h-4" />
-                      {featuredPost.readTime}
-                    </div>
-                  </div>
-                  <div className="flex flex-wrap gap-1">
-                    {featuredPost.tags.map((tag) => (
-                      <Badge key={tag} variant="outline" className="text-xs">
-                        {tag}
-                      </Badge>
-                    ))}
-                  </div>
-                  <Button asChild>
-                    <Link href="/blog/featured-post">
-                      Read More
-                      <ArrowRight className="w-4 h-4 ml-2" />
-                    </Link>
-                  </Button>
-                </div>
-              </div>
-            </div>
-          </Card>
-        </section> */}
-
-        {/* Filters
-        <section className="mb-8">
-          <div className="flex flex-col sm:flex-row gap-4 justify-between items-start sm:items-center">
-            <div className="flex flex-wrap gap-2">
-              {categories.map((category) => (
-                <Button key={category} variant={category === "All" ? "default" : "outline"} size="sm">
-                  {category}
-                </Button>
-              ))}
-            </div>
-            <div className="flex gap-4">
-              <div className="relative">
-                <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-muted-foreground" />
-                <Input placeholder="Search posts..." className="pl-10 w-64" />
-              </div>
-              <Select>
-                <SelectTrigger className="w-32">
-                  <SelectValue placeholder="Sort by" />
-                </SelectTrigger>
-                <SelectContent>
-                  <SelectItem value="newest">Newest</SelectItem>
-                  <SelectItem value="oldest">Oldest</SelectItem>
-                  <SelectItem value="popular">Most Popular</SelectItem>
-                </SelectContent>
-              </Select>
-            </div>
-          </div>
-        </section> */}
-
-        {/* Blog Posts Grid */}
         <section>
-          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+          {/* Changed from lg:grid-cols-3 to lg:grid-cols-4 and reduced gap slightly for a better fit */}
+          <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
             {blogPosts.map((post, index) => (
-              <Card key={index} className="group hover:shadow-lg transition-shadow overflow-hidden">
-                <div className="aspect-video relative bg-muted">
+              // Added flex flex-col and h-full so cards are uniform in height
+              <Card key={index} className="group hover:shadow-lg transition-shadow overflow-hidden flex flex-col h-full">
+                {/* Added shrink-0 so the image doesn't squash */}
+                <div className="aspect-video relative bg-muted shrink-0">
                   <Image
                     src={post.image || "/placeholder.svg"}
                     alt={post.title}
@@ -206,36 +125,29 @@ export default function BlogPage() {
                     className="object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>
-                <CardHeader className="space-y-3">
-                  {/* <div className="flex items-center justify-between">
-                    <Badge variant="secondary">{post.category}</Badge>
-                    <div className="flex items-center gap-1 text-xs text-muted-foreground">
-                      <Clock className="w-3 h-3" />
-                      {post.readTime}
-                    </div>
-                  </div> */}
-                  <h3 className="font-semibold text-lg leading-tight group-hover:text-primary transition-colors">
+                
+                {/* Tightened padding (p-4 pb-2) */}
+                <CardHeader className="space-y-2 p-4 pb-2">
+                  {/* Reduced text size slightly (text-base) and added line-clamp-2 to keep titles tidy */}
+                  <h3 className="font-semibold text-base leading-tight group-hover:text-primary transition-colors line-clamp-2">
                     <Link href={post.link}>{post.title}</Link>
                   </h3>
                 </CardHeader>
-                <CardContent className="space-y-4">
-                  <p className="text-sm text-muted-foreground line-clamp-3">{post.excerpt}</p>
-                  {/* <div className="flex flex-wrap gap-1">
-                    {post.tags.map((tag) => (
-                      <Badge key={tag} variant="outline" className="text-xs">
-                        {tag}
-                      </Badge>
-                    ))}
-                  </div> */}
-                  <div className="flex items-center justify-between pt-2">
-                    <span className="text-xs text-muted-foreground">
+                
+                {/* mt-auto ensures the bottom row (date & button) always aligns perfectly across all 4 cards */}
+                <CardContent className="space-y-3 p-4 pt-0 flex flex-col flex-1 mt-auto">
+                  {/* Made excerpt text-xs so it fits well in the narrower card */}
+                  <p className="text-xs text-muted-foreground line-clamp-3 mb-2">{post.excerpt}</p>
+                  
+                  <div className="flex items-center justify-between pt-2 border-t mt-auto">
+                    <span className="text-[10px] text-muted-foreground font-medium">
                       {new Date(post.date).toLocaleDateString("en-US", {
                         month: "short",
                         day: "numeric",
                         year: "numeric",
                       })}
                     </span>
-                    <Button size="sm" variant="ghost" asChild>
+                    <Button size="sm" variant="ghost" className="h-7 text-xs px-2" asChild>
                       <Link href={post.link}>
                         Read More
                         <ArrowRight className="w-3 h-3 ml-1" />
@@ -246,8 +158,6 @@ export default function BlogPage() {
               </Card>
             ))}
           </div>
-
-          
         </section>
       </div>
     </div>

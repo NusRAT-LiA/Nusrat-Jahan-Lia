@@ -42,6 +42,26 @@ interface Project {
 
 const projects: Project[] = [
    {
+    id: "fed",
+    title: "Federated Code Recommendation System",
+    description:
+      "This is a distributed RAG (Retrieval-Augmented Generation) system that enables organizations to share code recommendations while preserving privacy",
+    fullDescription:
+    "The system employs Federated Learning (FL) to collaboratively refine code embedding models across distributed nodes, ensuring that raw source code never leaves the local environment. Through a distributed Retrieval-Augmented Generation (RAG) framework, a central Gateway orchestrates the retrieval of sanitized, relevant context from local FAISS vector indices. These insights are then synthesized by Large Language Models (LLMs) to produce accurate, context-aware code suggestions. By integrating Differential Privacy during federated training, this system ensures organizational privacy",
+    motivation:
+    "I designed a small-language-model building course as an instructor of my university research lab - BARTA. This custom small language model that was built to give the learners hands-on experience.",
+    technologies: ["Federated Learning", "RAG", "FAISS", "Differential Privacy"],
+    categories: ["AI/ML"],
+    image: "projects/Fed-Code-Rec.png?height=400&width=600",
+    links: {
+      github: "https://github.com/NusRAT-LiA/Fed-Code-Rec",
+    },
+    status: "completed",
+    year: 2026,
+    featured: true,
+
+   },
+   {
     id: "slm",
     title: "Bangla - Small Language Model",
     description:
@@ -60,25 +80,6 @@ const projects: Project[] = [
     year: 2025,
     featured: true,
   },
-  // {
-  //   id: "bert",
-  //   title: "BERT Implementation from Scratch",
-  //   description:
-  //     "A PyTorch implementation of BERT (Bidirectional Encoder Representations from Transformers) built from scratch. The model includes essential components such as self-attention, position encoding, and transformer encoder layers. ",
-  //   fullDescription:
-  //   "Key Technical implementations include - BERT Base Architecture: 12-layer Transformer encoder, Pre-training Tasks: MLM (15% masking) + NSP, Custom Tokenizer: Built on WikiText-2 vocabulary, Training Pipeline: Batch processing and loss tracking, Inference API: Predict masked tokens in input sentences",
-  //   motivation:
-  //   "I believe you only learn something to the core when you can build and experiment with it. Implementing BERT was an integral part of my journey as an LLM-engineer",
-  //   technologies: ["LLM", "PyTorch", "Hugging Face"],
-  //   categories: ["AI/ML"],
-  //   image: "projects/bert.png?height=400&width=600",
-  //   links: {
-  //     github: "https://github.com/NusRAT-LiA/Llama-3.2-Medico-BD",
-  //   },
-  //   status: "completed",
-  //   year: 2025,
-  //   featured: true,
-  // },
   {
     id: "medico-bd",
     title: "Llama-3.2-Medico-BD",
@@ -181,24 +182,7 @@ const projects: Project[] = [
     year: 2024,
     featured: false,
   },
-  // {
-  //   id: "DecisionTree-Implementation",
-  //   title: "Decision Tree Algorithm Implementation",
-  //   description: "Low level algorithmic implementations of decision tree with ~94% and 100% accuracy",
-  //   fullDescription:
-  //     "This project demonstrates the implementation of a Decision Tree classifier using two approaches: a custom implementation from scratch, providing insight into how the algorithm works at a low level, and another using scikit-learn library for comparison. Both implementations are tested on the Iris dataset to classify different species of Iris flowers based on their sepal and petal dimensions. The project includes comprehensive performance analysis and visualization of decision boundaries.",
-  //   motivation:
-  //     "This was a part of the academic course, DBMS-2 assignment and my first step in the Machine-Learning world. Understanding algorithms from first principles is crucial for developing expertise in machine learning.",
-  //   technologies: ["Python", "scikit-learn", "NumPy", "Matplotlib"],
-  //   categories: ["AI/ML"],
-  //   image: "projects/DecisionTree-Implementation.png?height=400&width=600",
-  //   links: {
-  //     github: "https://github.com/NusRAT-LiA/DecisionTree-Implementation",
-  //   },
-  //   status: "completed",
-  //   year: 2024,
-  //   featured: false,
-  // },
+
   {
     id: "Kook-wa",
     title: "Kook-wa: 3D Action-Adventure Game",
@@ -295,197 +279,8 @@ export default function ProjectsPage() {
       <div className="container mx-auto px-4 py-8">
         {/* Header */}
         <div className="space-y-4 mb-8">
-          {/* <h1 className="text-4xl font-bold">Projects</h1> */}
-          <p className="text-lg text-muted-foreground max-w-3xl">
-            
-          </p>
+          <p className="text-lg text-muted-foreground max-w-3xl"></p>
         </div>
-
-       {/* Featured Projects
-        <section className="mb-12">
-          <h2 className="text-2xl font-bold mb-6">Featured Projects</h2>
-          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {featuredProjects.map((project) => (
-              <Card key={project.id} className="group hover:shadow-lg transition-shadow">
-                <div className="aspect-video relative overflow-hidden rounded-t-lg">
-                  <Image
-                    src={project.image || "/placeholder.svg"}
-                    alt={project.title}
-                    fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                  <div className="absolute top-2 right-2">
-                    <Badge variant={project.status === "completed" ? "default" : "secondary"}>{project.status}</Badge>
-                  </div>
-                </div>
-                <CardHeader>
-                  <div className="flex items-start justify-between">
-                    <div className="space-y-1">
-                      <CardTitle className="text-lg">{project.title}</CardTitle>
-                      <div className="flex flex-wrap gap-1 mb-2">
-                        {project.categories.map((category) => (
-                          <Badge key={category} variant="outline" className="text-xs">
-                            {category}
-                          </Badge>
-                        ))}
-                      </div>
-                    </div>
-                    <span className="text-sm text-muted-foreground">{project.year}</span>
-                  </div>
-                  <CardDescription>{project.description}</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <div className="space-y-4">
-                    <div className="flex flex-wrap gap-1">
-                      {project.technologies.slice(0, 3).map((tech) => (
-                        <Badge key={tech} variant="secondary" className="text-xs">
-                          {tech}
-                        </Badge>
-                      ))}
-                      {project.technologies.length > 3 && (
-                        <Badge variant="secondary" className="text-xs">
-                          +{project.technologies.length - 3} more
-                        </Badge>
-                      )}
-                    </div>
-
-                    
-                    <div className="flex flex-wrap gap-1">
-                      {project.links.github && (
-                        <Button variant="ghost" size="sm" asChild className="h-6 px-2">
-                          <Link href={project.links.github} target="_blank">
-                            <Github className="w-3 h-3" />
-                          </Link>
-                        </Button>
-                      )}
-                      {project.links.demo && (
-                        <Button variant="ghost" size="sm" asChild className="h-6 px-2">
-                          <Link href={project.links.demo} target="_blank">
-                            <ExternalLink className="w-3 h-3" />
-                          </Link>
-                        </Button>
-                      )}
-                      {project.links.document && (
-                        <Button variant="ghost" size="sm" asChild className="h-6 px-2">
-                          <Link href={project.links.document} target="_blank">
-                            <FileText className="w-3 h-3" />
-                          </Link>
-                        </Button>
-                      )}
-                      {project.links.whitepaper && (
-                        <Button variant="ghost" size="sm" asChild className="h-6 px-2">
-                          <Link href={project.links.whitepaper} target="_blank">
-                            <BookOpen className="w-3 h-3" />
-                          </Link>
-                        </Button>
-                      )}
-                      {project.links.pitchDeck && (
-                        <Button variant="ghost" size="sm" asChild className="h-6 px-2">
-                          <Link href={project.links.pitchDeck} target="_blank">
-                            <Presentation className="w-3 h-3" />
-                          </Link>
-                        </Button>
-                      )}
-                    </div>
-
-                    <div className="flex gap-2">
-                      <Dialog>
-                        <DialogTrigger asChild>
-                          <Button variant="outline" size="sm" className="flex-1 bg-transparent">
-                            View Details
-                          </Button>
-                        </DialogTrigger>
-                        <DialogContent className="max-w-4xl max-h-[80vh] overflow-y-auto">
-                          <DialogHeader>
-                            <DialogTitle>{project.title}</DialogTitle>
-                            <DialogDescription>{project.description}</DialogDescription>
-                          </DialogHeader>
-                          <ProjectDetails project={project} />
-                        </DialogContent>
-                      </Dialog>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </section> */}
-
-        {/* Filters and Search
-        <div className="space-y-4 mb-8">
-          <div className="flex flex-col md:flex-row gap-4">
-            <div className="relative flex-1">
-              <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-muted-foreground w-4 h-4" />
-              <Input
-                placeholder="Search projects, technologies, or descriptions..."
-                value={searchTerm}
-                onChange={(e) => setSearchTerm(e.target.value)}
-                className="pl-10"
-              />
-            </div>
-            <Button variant="outline" onClick={() => setViewMode(viewMode === "grid" ? "list" : "grid")}>
-              {viewMode === "grid" ? "List View" : "Grid View"}
-            </Button>
-          </div>
-
-          <div className="space-y-2">
-            <div className="flex items-center gap-2">
-              <Filter className="w-4 h-4" />
-              <span className="text-sm font-medium">Filter by Categories:</span>
-            </div>
-            <div className="flex flex-wrap gap-2">
-              {allCategories.map((category) => (
-                <Button
-                  key={category}
-                  variant={selectedCategories.includes(category) ? "default" : "outline"}
-                  size="sm"
-                  onClick={() => toggleCategory(category)}
-                >
-                  {category}
-                </Button>
-              ))}
-            </div>
-            {selectedCategories.length > 0 && (
-              <div className="flex items-center gap-2">
-                <span className="text-xs text-muted-foreground">Selected:</span>
-                <div className="flex flex-wrap gap-1">
-                  {selectedCategories.map((category) => (
-                    <Badge key={category} variant="secondary" className="text-xs">
-                      {category}
-                      <button onClick={() => toggleCategory(category)} className="ml-1 hover:text-destructive">
-                        ×
-                      </button>
-                    </Badge>
-                  ))}
-                </div>
-              </div>
-            )}
-          </div>
-
-          <div className="space-y-2">
-            <div className="flex items-center gap-2">
-              <Filter className="w-4 h-4" />
-              <span className="text-sm font-medium">Filter by Technology:</span>
-            </div>
-            <div className="flex flex-wrap gap-2">
-              {technologies.map((tech) => (
-                <Button
-                  key={tech}
-                  variant={selectedTech.includes(tech) ? "default" : "outline"}
-                  size="sm"
-                  onClick={() => toggleTech(tech)}
-                >
-                  {tech}
-                </Button>
-              ))}
-            </div>
-            {selectedTech.length > 0 && (
-              <Button variant="ghost" size="sm" onClick={() => setSelectedTech([])}>
-                Clear Filters
-              </Button>
-            )}
-          </div>
-        </div> */}
 
         {/* All Projects */}
         <section>
@@ -512,7 +307,13 @@ export default function ProjectsPage() {
               </Button>
             </div>
           ) : (
-            <div className={viewMode === "grid" ? "grid gap-6 md:grid-cols-2 lg:grid-cols-3" : "space-y-6"}>
+            <div
+              className={
+                viewMode === "grid"
+                  ? "grid gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
+                  : "space-y-6"
+              }
+            >
               {filteredProjects.map((project) => (
                 <ProjectCard key={project.id} project={project} viewMode={viewMode} />
               ))}
@@ -549,10 +350,11 @@ function ProjectCard({ project, viewMode }: { project: Project; viewMode: "grid"
                       </Badge>
                     ))}
                   </div>
-                  <Badge variant={project.status === "completed" ? "default" : "secondary"}>{project.status}</Badge>
+                  <Badge variant={project.status === "completed" ? "default" : "secondary"}>
+                    {project.status}
+                  </Badge>
                 </div>
                 <p className="text-muted-foreground">{project.description}</p>
-                
               </div>
               <span className="text-sm text-muted-foreground">{project.year}</span>
             </div>
@@ -609,9 +411,10 @@ function ProjectCard({ project, viewMode }: { project: Project; viewMode: "grid"
     )
   }
 
+  // Grid Mode (Compact Version)
   return (
-    <Card className="group hover:shadow-lg transition-shadow">
-      <div className="aspect-video relative overflow-hidden rounded-t-lg">
+    <Card className="group hover:shadow-lg transition-shadow flex flex-col h-full">
+      <div className="aspect-video relative overflow-hidden rounded-t-lg shrink-0">
         <Image
           src={project.image || "/placeholder.svg"}
           alt={project.title}
@@ -619,72 +422,78 @@ function ProjectCard({ project, viewMode }: { project: Project; viewMode: "grid"
           className="object-cover group-hover:scale-105 transition-transform duration-300"
         />
         <div className="absolute top-2 right-2">
-          <Badge variant={project.status === "completed" ? "default" : "secondary"}>{project.status}</Badge>
+          <Badge variant={project.status === "completed" ? "default" : "secondary"} className="text-[10px] px-1.5 py-0">
+            {project.status}
+          </Badge>
         </div>
       </div>
-      <CardHeader>
-        <div className="flex items-start justify-between">
-          <div className="space-y-1">
-            <CardTitle className="text-lg">{project.title}</CardTitle>
-            <div className="flex flex-wrap gap-1 mb-2">
+      
+      <CardHeader className="p-4 pb-2 space-y-0">
+        <div className="flex items-start justify-between gap-2">
+          <div className="space-y-1 min-w-0 flex-1">
+            <CardTitle className="text-sm font-semibold leading-tight">{project.title}</CardTitle>
+            <div className="flex flex-wrap gap-1 mb-1">
               {project.categories.map((category) => (
-                <Badge key={category} variant="outline" className="text-xs">
+                <Badge key={category} variant="outline" className="text-[10px] px-1.5 py-0 h-4">
                   {category}
                 </Badge>
               ))}
             </div>
           </div>
-          <span className="text-sm text-muted-foreground">{project.year}</span>
+          <span className="text-[10px] text-muted-foreground shrink-0 mt-0.5">{project.year}</span>
         </div>
-        <CardDescription>{project.description}</CardDescription>
+        <CardDescription className="text-xs mt-2">
+          {project.description}
+        </CardDescription>
       </CardHeader>
-      <CardContent>
-        <div className="space-y-4">
-          <div className="flex flex-wrap gap-1">
-            {project.technologies.slice(0, 3).map((tech) => (
-              <Badge key={tech} variant="secondary" className="text-xs">
-                {tech}
-              </Badge>
-            ))}
-            {project.technologies.length > 3 && (
-              <Badge variant="secondary" className="text-xs">
-                +{project.technologies.length - 3} more
-              </Badge>
-            )}
-          </div>
+      
+      <CardContent className="p-4 pt-0 mt-auto flex flex-col gap-3">
+        <div className="flex flex-wrap gap-1">
+          {project.technologies.slice(0, 3).map((tech) => (
+            <Badge key={tech} variant="secondary" className="text-[10px] px-1.5 py-0 h-4">
+              {tech}
+            </Badge>
+          ))}
+          {project.technologies.length > 3 && (
+            <Badge variant="secondary" className="text-[10px] px-1.5 py-0 h-4">
+              +{project.technologies.length - 3} more
+            </Badge>
+          )}
+        </div>
 
+        <div className="flex items-center justify-between gap-2 pt-1 border-t">
           {/* Quick Access Links */}
-          <div className="flex flex-wrap gap-1">
+          <div className="flex flex-wrap gap-0.5">
             {project.links.github && (
-              <Button variant="ghost" size="sm" asChild className="h-6 px-2">
+              <Button variant="ghost" size="sm" asChild className="h-6 w-6 p-0">
                 <Link href={project.links.github} target="_blank">
                   <Github className="w-3 h-3" />
                 </Link>
               </Button>
             )}
             {project.links.demo && (
-              <Button variant="ghost" size="sm" asChild className="h-6 px-2">
+              <Button variant="ghost" size="sm" asChild className="h-6 w-6 p-0">
                 <Link href={project.links.demo} target="_blank">
                   <ExternalLink className="w-3 h-3" />
                 </Link>
               </Button>
             )}
             {project.links.document && (
-              <Button variant="ghost" size="sm" asChild className="h-6 px-2">
+              <Button variant="ghost" size="sm" asChild className="h-6 w-6 p-0">
                 <Link href={project.links.document} target="_blank">
                   <FileText className="w-3 h-3" />
                 </Link>
               </Button>
             )}
             {project.links.whitepaper && (
-              <Button variant="ghost" size="sm" asChild className="h-6 px-2">
+              <Button variant="ghost" size="sm" asChild className="h-6 w-6 p-0">
                 <Link href={project.links.whitepaper} target="_blank">
                   <BookOpen className="w-3 h-3" />
                 </Link>
               </Button>
             )}
             {project.links.pitchDeck && (
-              <Button variant="ghost" size="sm" asChild className="h-6 px-2">
+              <Button variant="ghost" size="sm" asChild className="h-6 w-6 p-0">
                 <Link href={project.links.pitchDeck} target="_blank">
                   <Presentation className="w-3 h-3" />
                 </Link>
@@ -692,22 +501,20 @@ function ProjectCard({ project, viewMode }: { project: Project; viewMode: "grid"
             )}
           </div>
 
-          <div className="flex gap-2">
-            <Dialog>
-              <DialogTrigger asChild>
-                <Button variant="outline" size="sm" className="flex-1 bg-transparent">
-                  View Details
-                </Button>
-              </DialogTrigger>
-              <DialogContent className="max-w-4xl max-h-[80vh] overflow-y-auto">
-                <DialogHeader>
-                  <DialogTitle>{project.title}</DialogTitle>
-                  <DialogDescription>{project.description}</DialogDescription>
-                </DialogHeader>
-                <ProjectDetails project={project} />
-              </DialogContent>
-            </Dialog>
-          </div>
+          <Dialog>
+            <DialogTrigger asChild>
+              <Button variant="outline" size="sm" className="h-6 text-[10px] px-2 bg-transparent">
+                View Details
+              </Button>
+            </DialogTrigger>
+            <DialogContent className="max-w-4xl max-h-[80vh] overflow-y-auto">
+              <DialogHeader>
+                <DialogTitle>{project.title}</DialogTitle>
+                <DialogDescription>{project.description}</DialogDescription>
+              </DialogHeader>
+              <ProjectDetails project={project} />
+            </DialogContent>
+          </Dialog>
         </div>
       </CardContent>
     </Card>
@@ -727,11 +534,6 @@ function ProjectDetails({ project }: { project: Project }) {
             <h3 className="font-semibold mb-2">Project Overview</h3>
             <p className="text-muted-foreground text-xs">{project.fullDescription}</p>
           </div>
-
-          {/* <div>
-            <h3 className="font-semibold mb-2">Motivation</h3>
-            <p className="text-muted-foreground text-xs">{project.motivation}</p>
-          </div> */}
         </div>
 
         <div className="space-y-4">

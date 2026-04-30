@@ -65,8 +65,6 @@ export default function WorkPage() {
       type: "Government-Affiliated",
       description: [
         "Designed a mobile-first, crowdsourced wildlife crime reporting platform tailored for rural and low-connectivity environments in the Sundarbans.",
-        "Handled sparse and noisy community reports by developing custom NLP pipelines and geospatial models optimized for low-resource inputs",
-        "Leveraged machine learning to analyze spatial crime data and forecast environmental degradation hotspots",
         "Designed and developed a gaming application to educate Bangladeshi and International Youth about wildlife and biodiversity conservation and emphasize long-term stewardship ethics"
       ],
 
@@ -86,7 +84,6 @@ export default function WorkPage() {
       description: [
         "Co-authored the first paper on Chakma-language Knowledge transfer using MLM. Developing dataset and techniques for indigenous language (like Chakma) models.",
         "Designed and directed Small-language-model building course as an instructor of BARTA",
-        "Developed Educational Resource Allocation AI-Agent for the Government of Bangladesh."     
       ],
 
       achievements: [
@@ -132,53 +129,8 @@ export default function WorkPage() {
        
       ],
     },
-    {
-      id: "gbl",
-      title: "Contractual LLM/AI Engineer",
-      organization: "Global MicroLearning Solutions",
-      logo: "work/gbl.png?height=80&width=80",
-      startDate: "2025-08",
-      endDate: "2025-10",
-      type: "Industrial",
-      description: [
-        "I designed and deployed large-scale AI Agents for field support and turbine-engineering solutions"
-      ],
-      link: "https://globalmicrolearning.com/",
-      achievements: [
-      ],
-    },
-    // {
-    //   id: "orvixo",
-    //   title: "Co-Founder",
-    //   organization: "Orvixo",
-    //   logo: "work/orvixo.png?height=80&width=80",
-    //   startDate: "2025-04",
-    //   endDate: null,
-    //   type: "Entrepreneurial",
-    //   description: [
-    //     "Building one-stop AI solution for all the business intelligence and analytics needs with just Natural Language to Query",
-    // ],
+ 
 
-    //   achievements: [
-      
-    //   ],
-    // },
-    // {
-    //   id: "profyl",
-    //   title: "Founding AI Engineer",
-    //   organization: "Profyl.AI",
-    //   logo: "work/profyl.svg?height=80&width=80",
-    //   startDate: "2025-02",
-    //   endDate: null,
-    //   type: "Entrepreneurial",
-    //   description: [
-    //     "Building AI solutions for cost-effective recruitment service for companies"
-    //   ],
-
-    //   achievements: [
-      
-    //   ],
-    // },
     // {
     //   id: "edutech-2023",
     //   title: "Founder & CEO",
