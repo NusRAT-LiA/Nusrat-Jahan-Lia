@@ -52,7 +52,7 @@ export default function HomePage() {
 
              
               <p className="mb-6">
-                I am currently a final-year software engineering undergraduate student at University of Dhaka where I work in BARTA Lab. There, I focus on <strong>low-resource and small-language-model development, design datasets, techniques, and educational resources .</strong> I also serve as an <strong>instructor</strong> at BARTA, where <strong>I teach a language model building course.</strong> At <strong>BanglaLLM</strong>, I work with amazing researchers and developers building open-source language models for low-resource Bangla language. This year, I am also serving as an Instructor for <strong>International AI Olympiad</strong>, teaching <strong>AI Recommender Systems</strong>.
+              I recently graduated with a degree in Software Engineering (concentrating in AI and NLP) from the University of Dhaka where I work in BARTA Lab. There, I focus on <strong>low-resource and small-language-model development, design datasets, techniques, and educational resources .</strong> I also serve as an <strong>instructor</strong> at BARTA, where <strong>I teach a language model building course.</strong> At <strong>BanglaLLM</strong>, I work with amazing researchers and developers building open-source language models for low-resource Bangla language. This year, I am also serving as an Instructor for <strong>International AI Olympiad</strong>, teaching <strong>AI Recommender Systems</strong>.
               </p>
 
               <p className="mb-6">
