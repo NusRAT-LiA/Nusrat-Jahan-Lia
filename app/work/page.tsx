@@ -19,9 +19,8 @@ export default function WorkPage() {
       organization: "Aramco-Ithra",
       logo: "work/aramco.jpg?height=80&width=80",
       link: "https://www.aramco.com/",
-      // location: "Cambridge, MA",
       startDate: "2025-03",
-      endDate: null,
+      endDate: "2026-03",
       type: "Academic",
       description: [
         "Led projects and worked in collaboration with WHO, Stony Brook Medicine, McGill University, University of Geneva, University of Tokyo and other institutions (from around 35 countries)",
