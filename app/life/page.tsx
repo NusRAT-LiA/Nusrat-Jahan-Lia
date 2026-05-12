@@ -143,6 +143,17 @@ const LifeEventCard = ({ event }: { event: LifeEvent }) => {
 export default function LifePage() {
   const lifeEvents: LifeEvent[] = [
     {
+      id: "13",
+      title:
+        "Served as a Judge at a National Hackathon",
+      date: "2026-05-09",
+      image: "events/judge.jpg",
+      description:
+        "",
+      // link: "https://barta-research-lab.github.io/",
+      category: "Judge",
+    },
+    {
       id: "12",
       title:
         "Teaching foundational Bangla Natural Language Processing as an Instructor of Barta at Institute of Information Technology, University of Dhaka",

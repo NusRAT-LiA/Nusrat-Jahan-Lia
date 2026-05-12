@@ -22,6 +22,18 @@ type Publication = {
 export default function ResearchPage() {
   const publications: Publication[] = [
     {
+      title: "AGENTCOLLABBENCH: Diagnosing When Good Agents Make Bad Collaborators",
+      authors: "Aritra Mazumder; Shubhashis Roy Dipta; Nusrat Jahan Lia; et al.",
+      affiliations: ["University of Utah", "University of Maryland, Baltimore County", "University of Virginia","University of Dhaka","...."],
+      venue: " ",
+      year: "2026",
+      // type: "Conference",
+      // tags: ["MLM", "Large Language Model", "Tokenization"],
+      link: "https://arxiv.org/pdf/2605.08647",
+      photo: "research/agentcollab.png",
+    },
+
+    {
       title: "Cross-Lingual Sentiment Misalignment: Auditing Multilingual Language Models for Inversion Risk, Dialectal Representation, and Affective Stability",
       authors: "Nusrat Jahan Lia; Shubhashis Roy Dipta",
       affiliations: ["University of Dhaka", "University of Maryland"],

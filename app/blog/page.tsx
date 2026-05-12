@@ -22,6 +22,15 @@ export default function BlogPage() {
 
   const blogPosts = [
     {
+      title: "When Good Agents Make Bad Collaborators",
+      excerpt:
+        "Hidden Behavioral and Reliability Failures in Multi-Agent LLMs Beyond Task Accuracy",
+      image: "projects/agentcollab.png?height=200&width=300",
+      date: "2026-05-12",
+      readTime: "6 min read",
+      link: "https://medium.com/@nusratlia/when-good-agents-make-bad-collaborators-26baaabd5aba",
+    },
+    {
       title: "Thinking aloud Federated Code Intelligence: Privacy, Retrieval, and Knowledge Asymmetry",
       excerpt:
         "I didn't just want to rely on some LLM-generated response or forum question answers. I kept wondering where I could learn from actual, recent, battle-tested approaches used by companies currently operating these systems at scale.",

@@ -41,6 +41,26 @@ interface Project {
 }
 
 const projects: Project[] = [
+  {
+    id: "acb",
+    title: "AgentCollabBench",
+    description:
+      "A diagnostic benchmark, and four novel metrics designed to identify hidden behavioral vulnerabilities in multi-agent Large Language Model (LLM) systems that standard outcome-based evaluations miss.",
+    fullDescription:
+    "By utilizing 900 human-validated tasks across the DevOps, software, and data engineering sectors, the framework assesses how agents handle instruction decay, false-belief contagion, context leakage, and information durability. The research reveals that high-performing models frequently suffer from process failures when they work collaboratively, such as discarding critical constraints when navigating complex communication topologies.",
+    motivation:
+    " ",
+    technologies: ["Multi-Agent Systems", "AI Safety"],
+    categories: ["AI/ML"],
+    image: "projects/agentcollab.png?height=400&width=600",
+    links: {
+      github: "https://www.aritramazumder.com/agentcollabbench/",
+    },
+    status: "completed",
+    year: 2026,
+    featured: true,
+
+   },
    {
     id: "fed",
     title: "Federated Code Recommendation System",
