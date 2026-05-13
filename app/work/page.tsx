@@ -14,6 +14,21 @@ export default function WorkPage() {
 
   const positions = [
     {
+      id: "fatima",
+      title: "Pre Doctoral Fellow",
+      organization: "Fatima Institute for Global AI Research",
+      logo: "work/fatima.jpeg?height=80&width=80",
+      startDate: "2026-04",
+      endDate: null,
+      type: "Academic",
+      description:  [
+        "Research Project: AI Safety and Specification Drift in Long-Horizon Multilingual Agents",
+      ],
+      // link: "https://www.iaio-official.org/",
+      achievements: [
+      ],
+    },
+    {
       id: "aramco-2024",
       title: "Research Intern",
       organization: "Aramco-Ithra",
