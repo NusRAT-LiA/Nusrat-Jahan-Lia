@@ -37,7 +37,7 @@ export default function ResearchPage() {
       title: "Cross-Lingual Sentiment Misalignment: Auditing Multilingual Language Models for Inversion Risk, Dialectal Representation, and Affective Stability",
       authors: "Nusrat Jahan Lia; Shubhashis Roy Dipta",
       affiliations: ["University of Dhaka", "University of Maryland"],
-      venue: " ",
+      venue: "mellm @ ACL 2026; Published: ACL Anthology",
       year: "2026",
       // type: "Conference",
       // tags: ["MLM", "Large Language Model", "Tokenization"],
