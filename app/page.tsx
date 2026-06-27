@@ -1,205 +1,68 @@
+"use client"
+
+import { useEffect, useState } from "react"
 import { Button } from "@/components/ui/button"
-import { Badge } from "@/components/ui/badge"
 import { Card, CardContent } from "@/components/ui/card"
-import { Github, Linkedin, Mail, ExternalLink, BookOpen, Users, Briefcase, FileText } from "lucide-react"
+import { ExternalLink } from "lucide-react"
 import Image from "next/image"
-import Link from "next/link"
-import Blog from "./blog/page"
-import Courses from "./courses/page"
-import Work from "./work/page"
-import Research from "./research/page"
-import Projects from "./projects/page"
-import Life from "./life/page"
+
+const NEW_SITE_URL = "https://nusrat-lia.github.io/"
+const REDIRECT_SECONDS = 3
 
 export default function HomePage() {
-  
+  const [secondsLeft, setSecondsLeft] = useState(REDIRECT_SECONDS)
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setSecondsLeft((s) => (s > 0 ? s - 1 : 0))
+    }, 1000)
+
+    const timeout = setTimeout(() => {
+      window.location.replace(NEW_SITE_URL)
+    }, REDIRECT_SECONDS * 1000)
+
+    return () => {
+      clearInterval(interval)
+      clearTimeout(timeout)
+    }
+  }, [])
+
   return (
-    <div className="min-h-screen bg-background">
-      {/* Hero Section */}
-
-      <section className="container mx-auto px-4 py-16 md:py-24">
-       <div className="grid gap-12 lg:grid-cols-[1fr_2fr] lg:gap-16 items-center">
-          
-          {/* Image first on large screens */}
-          <div className="relative order-1 lg:order-1">
-            <div className="aspect-square relative overflow-hidden rounded-2xl">
-              <Image
-                src="me/me-n.png?height=500&width=500"
-                alt="Nusrat Lia"
-                fill
-                className="object-cover"
-              />
-            </div>
-
+    <div className="min-h-screen bg-background flex items-center justify-center px-4 py-16">
+      <Card className="w-full max-w-xl shadow-lg">
+        <CardContent className="p-8 md:p-12 flex flex-col items-center text-center space-y-6">
+          <div className="relative h-24 w-24 overflow-hidden rounded-full ring-2 ring-border">
+            <Image
+              src="me/me-n.png?height=200&width=200"
+              alt="Nusrat Lia"
+              fill
+              className="object-cover"
+            />
           </div>
 
-          {/* Text second on large screens */}
-          <div className="space-y-6 order-2 lg:order-2">
-            <div className="space-y-4">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight">
-                Hi, I'm Lia
-              </h1>
-            </div>
-
-            <div className="text-sm text-muted-foreground leading-relaxed">
-              <p className="mb-6">
-                My work lies in <strong> natural language processing, human-centered applications and secured decentralized systems, with experience in large-scale software and LLM development</strong>
-              </p>
-
-              <p className="mb-6">
-               I was a Research Intern at Aramco-Ithra, collaborating with global institutions including <strong>WHO, Stony Brook Medicine, University of Washington, University of Geneva, Western University, University of Tokyo and research institutes from 35 countries.</strong> Previously, I worked with the <strong>United States Department of Justice - ICITAP</strong>, designed a platform for secure crowdsourced wildlife crime reporting in low-connectivity areas, leveraging <strong>custom NLP pipelines, geospatial and predictive models</strong> to analyze environmental and crime data. There, I've worked on a gaming application to educate International Youth about wildlife crime and biodiversity conservation.
-              </p>
-
-             
-              <p className="mb-6">
-              I recently graduated with a degree in Software Engineering (concentrating in AI and NLP) from the University of Dhaka where I work in BARTA Lab. There, I focus on <strong>low-resource and small-language-model development, design datasets, techniques, and educational resources .</strong> I also serve as an <strong>instructor</strong> at BARTA, where <strong>I teach a language model building course.</strong> At <strong>BanglaLLM</strong>, I work with amazing researchers and developers building open-source language models for low-resource Bangla language. This year, I am also serving as an Instructor for <strong>International AI Olympiad</strong>, teaching <strong>AI Recommender Systems</strong>.
-              </p>
-
-              <p className="mb-6">
-                Entrepreneurially, I am a <strong>founding researcher</strong> of Perspectivity - Drishtikon, the first real-time AI news aggregator for Bangla, featuring multi-axis bias detection, news summarization, and interactive bots that empower citizens with nuanced, research-backed insights.
-              </p>
-              {/* <p className="mb-6">
-                As a Contractual AI Engineer at Global MicroLearning Solutions, I designed and deployed <strong> large-scale LLM solutions </strong> that support engineering teams in the field with intelligent, context-aware systems.
-              </p> */}
-              <p className="mb-6">
-                And... I paint. 
-              </p>
-            </div>
-
-            <div className="flex flex-wrap gap-4">
-              <Button asChild>
-                <Link href="/contact">
-                  <Mail className="w-4 h-4 mr-2" />
-                  Get in Touch
-                </Link>
-              </Button>
-            </div>
-
-            <div className="flex gap-4">
-              <Link href="https://github.com/NusRAT-LiA" className="text-muted-foreground hover:text-foreground transition-colors">
-                <Github className="w-5 h-5" />
-              </Link>
-
-              <Link href="https://www.linkedin.com/in/nusrat-jahan-lia-608655229/" className="text-muted-foreground hover:text-foreground transition-colors">
-                <Linkedin className="w-5 h-5" />
-              </Link>
-              
-              <Link href="https://scholar.google.com/citations?user=c2tTr4UAAAAJ&hl=en" className="text-muted-foreground hover:text-foreground">
-                <BookOpen className="h-4 w-4" />
-              </Link>
-            </div>
+          <div className="space-y-2">
+            <h1 className="text-3xl md:text-4xl font-bold tracking-tight">
+              I've moved!
+            </h1>
+            <p className="text-muted-foreground leading-relaxed">
+              My portfolio now lives at a new home. You'll be redirected
+              automatically in <span className="font-semibold text-foreground">{secondsLeft}</span>{" "}
+              second{secondsLeft === 1 ? "" : "s"}.
+            </p>
           </div>
-        </div>
-      </section>
 
-      {/* Quick Navigation */}
-      {/* <section className="container mx-auto px-4 py-12">
-        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
-          <Card className="group hover:shadow-lg transition-shadow cursor-pointer">
-            <Link href="/research">
-              <CardContent className="p-6 text-center space-y-4">
-                <div className="w-12 h-12 mx-auto bg-primary/10 rounded-lg flex items-center justify-center group-hover:bg-primary/20 transition-colors">
-                  <FileText className="w-6 h-6 text-primary" />
-                </div>
-                <div>
-                  <h3 className="font-semibold">Research</h3>
-                </div>
-              </CardContent>
-            </Link>
-          </Card>
-
-          <Card className="group hover:shadow-lg transition-shadow cursor-pointer">
-            <Link href="/projects">
-              <CardContent className="p-6 text-center space-y-4">
-                <div className="w-12 h-12 mx-auto bg-primary/10 rounded-lg flex items-center justify-center group-hover:bg-primary/20 transition-colors">
-                  <Briefcase className="w-6 h-6 text-primary" />
-                </div>
-                <div>
-                  <h3 className="font-semibold">Projects</h3>
-                </div>
-              </CardContent>
-            </Link>
-          </Card>
-
-          <Card className="group hover:shadow-lg transition-shadow cursor-pointer">
-            <Link href="/courses">
-              <CardContent className="p-6 text-center space-y-4">
-                <div className="w-12 h-12 mx-auto bg-primary/10 rounded-lg flex items-center justify-center group-hover:bg-primary/20 transition-colors">
-                  <BookOpen className="w-6 h-6 text-primary" />
-                </div>
-                <div>
-                  <h3 className="font-semibold">Courses</h3>
-                </div>
-              </CardContent>
-            </Link>
-          </Card>
-
-          <Card className="group hover:shadow-lg transition-shadow cursor-pointer">
-            <Link href="/blog">
-              <CardContent className="p-6 text-center space-y-4">
-                <div className="w-12 h-12 mx-auto bg-primary/10 rounded-lg flex items-center justify-center group-hover:bg-primary/20 transition-colors">
-                  <Users className="w-6 h-6 text-primary" />
-                </div>
-                <div>
-                  <h3 className="font-semibold">Blog</h3>
-                </div>
-              </CardContent>
-            </Link>
-          </Card>
-        </div>
-      </section> */}
-      <section>
-        <Research/>
-      </section>
-      
-      <section>
-        <Work/>
-      </section>
-
-      <section>
-        <Courses/>
-      </section>
-      <section>
-        <Blog />
-      </section>
-      <section>
-        <Projects/>
-      </section>
-      <section>
-        <Life/>
-      </section>
-      
-      
-
-      {/* Latest News
-      <section className="container mx-auto px-4 py-12">
-        <div className="space-y-6">
-          <h2 className="text-2xl font-bold">Latest News</h2>
-          <div className="space-y-4">
-            {newsItems.map((item, index) => (
-              <div
-                key={index}
-                className="flex gap-4 p-4 rounded-lg border bg-card hover:bg-accent/50 transition-colors"
-              >
-                <div className="text-sm text-muted-foreground whitespace-nowrap">
-                  {new Date(item.date).toLocaleDateString("en-US", {
-                    month: "short",
-                    day: "numeric",
-                    year: "numeric",
-                  })}
-                </div>
-                <div className="flex-1">
-                  <p className="text-sm">{item.title}</p>
-                </div>
-                <ExternalLink className="w-4 h-4 text-muted-foreground" />
-              </div>
-            ))}
-          </div>
-          <Button variant="outline" asChild>
-            <Link href="/news">View All News</Link>
+          <Button asChild size="lg" className="gap-2">
+            <a href={NEW_SITE_URL}>
+              Go to new site
+              <ExternalLink className="h-4 w-4" />
+            </a>
           </Button>
-        </div>
-      </section> */}
+
+          <p className="text-xs text-muted-foreground break-all">
+            {NEW_SITE_URL}
+          </p>
+        </CardContent>
+      </Card>
     </div>
   )
 }
